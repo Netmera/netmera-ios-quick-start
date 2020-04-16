@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5D786D42448411400739D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D32448411400739D6D /* AppDelegate.swift */; };
+		F5D786D62448411500739D6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D52448411500739D6D /* SceneDelegate.swift */; };
+		F5D786D82448411500739D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D72448411500739D6D /* ViewController.swift */; };
+		F5D786DB2448411500739D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D786D92448411500739D6D /* Main.storyboard */; };
+		F5D786DD2448411700739D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D786DC2448411700739D6D /* Assets.xcassets */; };
+		F5D786E02448411700739D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D786DE2448411700739D6D /* LaunchScreen.storyboard */; };
+		F5D786EB2448411800739D6D /* NetmeraSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786EA2448411800739D6D /* NetmeraSampleTests.swift */; };
+		F5D786F62448411800739D6D /* NetmeraSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786F52448411800739D6D /* NetmeraSampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5D786E72448411800739D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D786C82448411400739D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D786CF2448411400739D6D;
+			remoteInfo = NetmeraSample;
+		};
+		F5D786F22448411800739D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D786C82448411400739D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D786CF2448411400739D6D;
+			remoteInfo = NetmeraSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5D786D02448411400739D6D /* NetmeraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D786D32448411400739D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5D786D52448411500739D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5D786D72448411500739D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5D786DA2448411500739D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5D786DC2448411700739D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5D786DF2448411700739D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5D786E12448411700739D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D786E62448411800739D6D /* NetmeraSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetmeraSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D786EA2448411800739D6D /* NetmeraSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetmeraSampleTests.swift; sourceTree = "<group>"; };
+		F5D786EC2448411800739D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D786F12448411800739D6D /* NetmeraSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetmeraSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D786F52448411800739D6D /* NetmeraSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetmeraSampleUITests.swift; sourceTree = "<group>"; };
+		F5D786F72448411800739D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D786CD2448411400739D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D786E32448411800739D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D786EE2448411800739D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5D786C72448411400739D6D = {
+			isa = PBXGroup;
+			children = (
+				F5D786D22448411400739D6D /* NetmeraSample */,
+				F5D786E92448411800739D6D /* NetmeraSampleTests */,
+				F5D786F42448411800739D6D /* NetmeraSampleUITests */,
+				F5D786D12448411400739D6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D786D12448411400739D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D786D02448411400739D6D /* NetmeraSample.app */,
+				F5D786E62448411800739D6D /* NetmeraSampleTests.xctest */,
+				F5D786F12448411800739D6D /* NetmeraSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D786D22448411400739D6D /* NetmeraSample */ = {
+			isa = PBXGroup;
+			children = (
+				F5D786D32448411400739D6D /* AppDelegate.swift */,
+				F5D786D52448411500739D6D /* SceneDelegate.swift */,
+				F5D786D72448411500739D6D /* ViewController.swift */,
+				F5D786D92448411500739D6D /* Main.storyboard */,
+				F5D786DC2448411700739D6D /* Assets.xcassets */,
+				F5D786DE2448411700739D6D /* LaunchScreen.storyboard */,
+				F5D786E12448411700739D6D /* Info.plist */,
+			);
+			path = NetmeraSample;
+			sourceTree = "<group>";
+		};
+		F5D786E92448411800739D6D /* NetmeraSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D786EA2448411800739D6D /* NetmeraSampleTests.swift */,
+				F5D786EC2448411800739D6D /* Info.plist */,
+			);
+			path = NetmeraSampleTests;
+			sourceTree = "<group>";
+		};
+		F5D786F42448411800739D6D /* NetmeraSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D786F52448411800739D6D /* NetmeraSampleUITests.swift */,
+				F5D786F72448411800739D6D /* Info.plist */,
+			);
+			path = NetmeraSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D786CF2448411400739D6D /* NetmeraSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D786FA2448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSample" */;
+			buildPhases = (
+				F5D786CC2448411400739D6D /* Sources */,
+				F5D786CD2448411400739D6D /* Frameworks */,
+				F5D786CE2448411400739D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetmeraSample;
+			productName = NetmeraSample;
+			productReference = F5D786D02448411400739D6D /* NetmeraSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5D786E52448411800739D6D /* NetmeraSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D786FD2448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSampleTests" */;
+			buildPhases = (
+				F5D786E22448411800739D6D /* Sources */,
+				F5D786E32448411800739D6D /* Frameworks */,
+				F5D786E42448411800739D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D786E82448411800739D6D /* PBXTargetDependency */,
+			);
+			name = NetmeraSampleTests;
+			productName = NetmeraSampleTests;
+			productReference = F5D786E62448411800739D6D /* NetmeraSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5D786F02448411800739D6D /* NetmeraSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D787002448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSampleUITests" */;
+			buildPhases = (
+				F5D786ED2448411800739D6D /* Sources */,
+				F5D786EE2448411800739D6D /* Frameworks */,
+				F5D786EF2448411800739D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D786F32448411800739D6D /* PBXTargetDependency */,
+			);
+			name = NetmeraSampleUITests;
+			productName = NetmeraSampleUITests;
+			productReference = F5D786F12448411800739D6D /* NetmeraSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D786C82448411400739D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Muhammed Kılınç";
+				TargetAttributes = {
+					F5D786CF2448411400739D6D = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					F5D786E52448411800739D6D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = F5D786CF2448411400739D6D;
+					};
+					F5D786F02448411800739D6D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = F5D786CF2448411400739D6D;
+					};
+				};
+			};
+			buildConfigurationList = F5D786CB2448411400739D6D /* Build configuration list for PBXProject "NetmeraSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5D786C72448411400739D6D;
+			productRefGroup = F5D786D12448411400739D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D786CF2448411400739D6D /* NetmeraSample */,
+				F5D786E52448411800739D6D /* NetmeraSampleTests */,
+				F5D786F02448411800739D6D /* NetmeraSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D786CE2448411400739D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D786E02448411700739D6D /* LaunchScreen.storyboard in Resources */,
+				F5D786DD2448411700739D6D /* Assets.xcassets in Resources */,
+				F5D786DB2448411500739D6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D786E42448411800739D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D786EF2448411800739D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D786CC2448411400739D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D786D82448411500739D6D /* ViewController.swift in Sources */,
+				F5D786D42448411400739D6D /* AppDelegate.swift in Sources */,
+				F5D786D62448411500739D6D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D786E22448411800739D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D786EB2448411800739D6D /* NetmeraSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D786ED2448411800739D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D786F62448411800739D6D /* NetmeraSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5D786E82448411800739D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5D786CF2448411400739D6D /* NetmeraSample */;
+			targetProxy = F5D786E72448411800739D6D /* PBXContainerItemProxy */;
+		};
+		F5D786F32448411800739D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5D786CF2448411400739D6D /* NetmeraSample */;
+			targetProxy = F5D786F22448411800739D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5D786D92448411500739D6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D786DA2448411500739D6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D786DE2448411700739D6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D786DF2448411700739D6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D786F82448411800739D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5D786F92448411800739D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D786FB2448411800739D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5D786FC2448411800739D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5D786FE2448411800739D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetmeraSample.app/NetmeraSample";
+			};
+			name = Debug;
+		};
+		F5D786FF2448411800739D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetmeraSample.app/NetmeraSample";
+			};
+			name = Release;
+		};
+		F5D787012448411800739D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetmeraSample;
+			};
+			name = Debug;
+		};
+		F5D787022448411800739D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetmeraSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D786CB2448411400739D6D /* Build configuration list for PBXProject "NetmeraSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D786F82448411800739D6D /* Debug */,
+				F5D786F92448411800739D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D786FA2448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D786FB2448411800739D6D /* Debug */,
+				F5D786FC2448411800739D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D786FD2448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D786FE2448411800739D6D /* Debug */,
+				F5D786FF2448411800739D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D787002448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D787012448411800739D6D /* Debug */,
+				F5D787022448411800739D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5D786C82448411400739D6D /* Project object */;
+}
