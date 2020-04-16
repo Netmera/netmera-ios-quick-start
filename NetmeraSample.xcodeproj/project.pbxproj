@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FCF85CAD4D3CDC24750F6CD /* Pods_NetmeraSampleNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */; };
 		A2DCCFD5522C00320019F4E5 /* Pods_NetmeraSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D477412B75A2DE05DF7CDDC2 /* Pods_NetmeraSample.framework */; };
-		A8ECA61994409DFA715D7C28 /* Pods_NetmeraSample_NetmeraSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007708F89398CC8D927460BC /* Pods_NetmeraSample_NetmeraSampleUITests.framework */; };
 		DE4DF5782851A1B9992E9C04 /* Pods_NetmeraSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D26D6B0553E4815D7C56020 /* Pods_NetmeraSampleTests.framework */; };
+		F0055D2276184C89735EEE7F /* Pods_NetmeraSampleNotificationContentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */; };
+		F53419C62448521A0026A4DA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53419C52448521A0026A4DA /* UserNotifications.framework */; };
+		F53419C82448521A0026A4DA /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53419C72448521A0026A4DA /* UserNotificationsUI.framework */; };
+		F53419CB2448521A0026A4DA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419CA2448521A0026A4DA /* NotificationViewController.swift */; };
+		F53419CE2448521A0026A4DA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53419CC2448521A0026A4DA /* MainInterface.storyboard */; };
+		F53419D22448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F53419DE2448522E0026A4DA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419DD2448522E0026A4DA /* NotificationService.swift */; };
+		F53419E22448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F5D786D42448411400739D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D32448411400739D6D /* AppDelegate.swift */; };
 		F5D786D62448411500739D6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D52448411500739D6D /* SceneDelegate.swift */; };
 		F5D786D82448411500739D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D72448411500739D6D /* ViewController.swift */; };
@@ -21,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F53419D02448521A0026A4DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D786C82448411400739D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53419C32448521A0026A4DA;
+			remoteInfo = NetmeraSampleNotificationContentExtension;
+		};
+		F53419E02448522E0026A4DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D786C82448411400739D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53419DA2448522E0026A4DA;
+			remoteInfo = NetmeraSampleNotificationServiceExtension;
+		};
 		F5D786E72448411800739D6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F5D786C82448411400739D6D /* Project object */;
@@ -37,17 +59,51 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F53419D62448521A0026A4DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F53419E22448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex in Embed App Extensions */,
+				F53419D22448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		007708F89398CC8D927460BC /* Pods_NetmeraSample_NetmeraSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSample_NetmeraSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		110501C81934DC6E68EA4771 /* Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		32B74BF37AB7512BFB089ECC /* Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3600BE7C72D36D24352F9FBF /* Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3C21C170DA418D21CEFFD03A /* Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		59DD0E248F77D055251FB3C6 /* Pods-NetmeraSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7D26D6B0553E4815D7C56020 /* Pods_NetmeraSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906579E8E0796F784843B82E /* Pods-NetmeraSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleTests.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleTests/Pods-NetmeraSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		9BB377769D225C602C31B180 /* Pods-NetmeraSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample.release.xcconfig"; sourceTree = "<group>"; };
-		AE35E60CC0F63AD299AF2566 /* Pods-NetmeraSample-NetmeraSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleUITests/Pods-NetmeraSample-NetmeraSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4DAE06273571D0ED87DC574 /* Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationContentExtension/Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD5B0C22189E95E2AFA67F2 /* Pods-NetmeraSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleTests/Pods-NetmeraSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A5C4D8C27076FB90C11937 /* Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		D2D5790D25111FD7AED7B626 /* Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		D477412B75A2DE05DF7CDDC2 /* Pods_NetmeraSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D53CC70EC213BA291FBC9CC2 /* Pods-NetmeraSample-NetmeraSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleUITests/Pods-NetmeraSample-NetmeraSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleNotificationContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97244AD1DFA39BBF0DA72B3 /* Pods-NetmeraSampleNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationContentExtension/Pods-NetmeraSampleNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53419BF2448502F0026A4DA /* NetmeraSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraSample.entitlements; sourceTree = "<group>"; };
+		F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetmeraSampleNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53419C52448521A0026A4DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		F53419C72448521A0026A4DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		F53419CA2448521A0026A4DA /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		F53419CD2448521A0026A4DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F53419CF2448521A0026A4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetmeraSampleNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53419DD2448522E0026A4DA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F53419DF2448522E0026A4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53419E7244853770026A4DA /* NetmeraSampleNotificationContentExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetmeraSampleNotificationContentExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		F53419EB2448546C0026A4DA /* NetmeraSampleNotificationServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetmeraSampleNotificationServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		F53419EC244857230026A4DA /* NetmeraSampleNotificationContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraSampleNotificationContentExtension.entitlements; sourceTree = "<group>"; };
 		F5D786D02448411400739D6D /* NetmeraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D786D32448411400739D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D786D52448411500739D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +121,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F53419C12448521A0026A4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53419C82448521A0026A4DA /* UserNotificationsUI.framework in Frameworks */,
+				F53419C62448521A0026A4DA /* UserNotifications.framework in Frameworks */,
+				F0055D2276184C89735EEE7F /* Pods_NetmeraSampleNotificationContentExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53419D82448522E0026A4DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCF85CAD4D3CDC24750F6CD /* Pods_NetmeraSampleNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5D786CD2448411400739D6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,7 +159,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8ECA61994409DFA715D7C28 /* Pods_NetmeraSample_NetmeraSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +170,16 @@
 			children = (
 				59DD0E248F77D055251FB3C6 /* Pods-NetmeraSample.debug.xcconfig */,
 				9BB377769D225C602C31B180 /* Pods-NetmeraSample.release.xcconfig */,
-				AE35E60CC0F63AD299AF2566 /* Pods-NetmeraSample-NetmeraSampleUITests.debug.xcconfig */,
-				D53CC70EC213BA291FBC9CC2 /* Pods-NetmeraSample-NetmeraSampleUITests.release.xcconfig */,
 				BAD5B0C22189E95E2AFA67F2 /* Pods-NetmeraSampleTests.debug.xcconfig */,
 				906579E8E0796F784843B82E /* Pods-NetmeraSampleTests.release.xcconfig */,
+				D2D5790D25111FD7AED7B626 /* Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig */,
+				C7A5C4D8C27076FB90C11937 /* Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig */,
+				3600BE7C72D36D24352F9FBF /* Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig */,
+				110501C81934DC6E68EA4771 /* Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig */,
+				A4DAE06273571D0ED87DC574 /* Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig */,
+				E97244AD1DFA39BBF0DA72B3 /* Pods-NetmeraSampleNotificationContentExtension.release.xcconfig */,
+				3C21C170DA418D21CEFFD03A /* Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig */,
+				32B74BF37AB7512BFB089ECC /* Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,10 +188,35 @@
 			isa = PBXGroup;
 			children = (
 				D477412B75A2DE05DF7CDDC2 /* Pods_NetmeraSample.framework */,
-				007708F89398CC8D927460BC /* Pods_NetmeraSample_NetmeraSampleUITests.framework */,
 				7D26D6B0553E4815D7C56020 /* Pods_NetmeraSampleTests.framework */,
+				F53419C52448521A0026A4DA /* UserNotifications.framework */,
+				F53419C72448521A0026A4DA /* UserNotificationsUI.framework */,
+				E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */,
+				EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53419C92448521A0026A4DA /* NetmeraSampleNotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F53419EC244857230026A4DA /* NetmeraSampleNotificationContentExtension.entitlements */,
+				F53419CA2448521A0026A4DA /* NotificationViewController.swift */,
+				F53419E7244853770026A4DA /* NetmeraSampleNotificationContentExtension-Bridging-Header.h */,
+				F53419CC2448521A0026A4DA /* MainInterface.storyboard */,
+				F53419CF2448521A0026A4DA /* Info.plist */,
+			);
+			path = NetmeraSampleNotificationContentExtension;
+			sourceTree = "<group>";
+		};
+		F53419DC2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F53419DD2448522E0026A4DA /* NotificationService.swift */,
+				F53419EB2448546C0026A4DA /* NetmeraSampleNotificationServiceExtension-Bridging-Header.h */,
+				F53419DF2448522E0026A4DA /* Info.plist */,
+			);
+			path = NetmeraSampleNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		F5D786C72448411400739D6D = {
@@ -121,6 +225,8 @@
 				F5D786D22448411400739D6D /* NetmeraSample */,
 				F5D786E92448411800739D6D /* NetmeraSampleTests */,
 				F5D786F42448411800739D6D /* NetmeraSampleUITests */,
+				F53419C92448521A0026A4DA /* NetmeraSampleNotificationContentExtension */,
+				F53419DC2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */,
 				F5D786D12448411400739D6D /* Products */,
 				2EAE1EF7E8ED44FA5B809DB5 /* Pods */,
 				6CCE4284C70C768924706EF3 /* Frameworks */,
@@ -133,6 +239,8 @@
 				F5D786D02448411400739D6D /* NetmeraSample.app */,
 				F5D786E62448411800739D6D /* NetmeraSampleTests.xctest */,
 				F5D786F12448411800739D6D /* NetmeraSampleUITests.xctest */,
+				F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */,
+				F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +281,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F53419C32448521A0026A4DA /* NetmeraSampleNotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53419D32448521A0026A4DA /* Build configuration list for PBXNativeTarget "NetmeraSampleNotificationContentExtension" */;
+			buildPhases = (
+				8FEB393CD85751C3BAFA6915 /* [CP] Check Pods Manifest.lock */,
+				F53419C02448521A0026A4DA /* Sources */,
+				F53419C12448521A0026A4DA /* Frameworks */,
+				F53419C22448521A0026A4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetmeraSampleNotificationContentExtension;
+			productName = NetmeraSampleNotificationContentExtension;
+			productReference = F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F53419DA2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53419E32448522E0026A4DA /* Build configuration list for PBXNativeTarget "NetmeraSampleNotificationServiceExtension" */;
+			buildPhases = (
+				E50F7AD07A57755E47E383B5 /* [CP] Check Pods Manifest.lock */,
+				F53419D72448522E0026A4DA /* Sources */,
+				F53419D82448522E0026A4DA /* Frameworks */,
+				F53419D92448522E0026A4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetmeraSampleNotificationServiceExtension;
+			productName = NetmeraSampleNotificationServiceExtension;
+			productReference = F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F5D786CF2448411400739D6D /* NetmeraSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D786FA2448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSample" */;
@@ -181,10 +325,13 @@
 				F5D786CC2448411400739D6D /* Sources */,
 				F5D786CD2448411400739D6D /* Frameworks */,
 				F5D786CE2448411400739D6D /* Resources */,
+				F53419D62448521A0026A4DA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F53419D12448521A0026A4DA /* PBXTargetDependency */,
+				F53419E12448522E0026A4DA /* PBXTargetDependency */,
 			);
 			name = NetmeraSample;
 			productName = NetmeraSample;
@@ -214,7 +361,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D787002448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSampleUITests" */;
 			buildPhases = (
-				4C4F3173B07D81DD0E307341 /* [CP] Check Pods Manifest.lock */,
 				F5D786ED2448411800739D6D /* Sources */,
 				F5D786EE2448411800739D6D /* Frameworks */,
 				F5D786EF2448411800739D6D /* Resources */,
@@ -239,6 +385,12 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Netmera;
 				TargetAttributes = {
+					F53419C32448521A0026A4DA = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					F53419DA2448522E0026A4DA = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					F5D786CF2448411400739D6D = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -268,11 +420,28 @@
 				F5D786CF2448411400739D6D /* NetmeraSample */,
 				F5D786E52448411800739D6D /* NetmeraSampleTests */,
 				F5D786F02448411800739D6D /* NetmeraSampleUITests */,
+				F53419C32448521A0026A4DA /* NetmeraSampleNotificationContentExtension */,
+				F53419DA2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F53419C22448521A0026A4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53419CE2448521A0026A4DA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53419D92448522E0026A4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5D786CE2448411400739D6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,28 +469,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C4F3173B07D81DD0E307341 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NetmeraSample-NetmeraSampleUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4E6C85DAF17F5F751CAF7ED2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +485,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NetmeraSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FEB393CD85751C3BAFA6915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetmeraSampleNotificationContentExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -366,9 +535,47 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E50F7AD07A57755E47E383B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetmeraSampleNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F53419C02448521A0026A4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53419CB2448521A0026A4DA /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53419D72448522E0026A4DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53419DE2448522E0026A4DA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5D786CC2448411400739D6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +605,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F53419D12448521A0026A4DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53419C32448521A0026A4DA /* NetmeraSampleNotificationContentExtension */;
+			targetProxy = F53419D02448521A0026A4DA /* PBXContainerItemProxy */;
+		};
+		F53419E12448522E0026A4DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53419DA2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */;
+			targetProxy = F53419E02448522E0026A4DA /* PBXContainerItemProxy */;
+		};
 		F5D786E82448411800739D6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F5D786CF2448411400739D6D /* NetmeraSample */;
@@ -411,6 +628,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F53419CC2448521A0026A4DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53419CD2448521A0026A4DA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		F5D786D92448411500739D6D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,6 +655,92 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F53419D42448521A0026A4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4DAE06273571D0ED87DC574 /* Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetmeraSampleNotificationContentExtension/NetmeraSampleNotificationContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleNotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationContentExtension/NetmeraSampleNotificationContentExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F53419D52448521A0026A4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97244AD1DFA39BBF0DA72B3 /* Pods-NetmeraSampleNotificationContentExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NetmeraSampleNotificationContentExtension/NetmeraSampleNotificationContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleNotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationContentExtension/NetmeraSampleNotificationContentExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F53419E42448522E0026A4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C21C170DA418D21CEFFD03A /* Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationServiceExtension/NetmeraSampleNotificationServiceExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F53419E52448522E0026A4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32B74BF37AB7512BFB089ECC /* Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				INFOPLIST_FILE = NetmeraSampleNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationServiceExtension/NetmeraSampleNotificationServiceExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F5D786F82448411800739D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,6 +859,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59DD0E248F77D055251FB3C6 /* Pods-NetmeraSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NetmeraSample/NetmeraSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +880,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BB377769D225C602C31B180 /* Pods-NetmeraSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NetmeraSample/NetmeraSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,7 +945,6 @@
 		};
 		F5D787012448411800739D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE35E60CC0F63AD299AF2566 /* Pods-NetmeraSample-NetmeraSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -653,7 +965,6 @@
 		};
 		F5D787022448411800739D6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D53CC70EC213BA291FBC9CC2 /* Pods-NetmeraSample-NetmeraSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,6 +986,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F53419D32448521A0026A4DA /* Build configuration list for PBXNativeTarget "NetmeraSampleNotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53419D42448521A0026A4DA /* Debug */,
+				F53419D52448521A0026A4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53419E32448522E0026A4DA /* Build configuration list for PBXNativeTarget "NetmeraSampleNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53419E42448522E0026A4DA /* Debug */,
+				F53419E52448522E0026A4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F5D786CB2448411400739D6D /* Build configuration list for PBXProject "NetmeraSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
