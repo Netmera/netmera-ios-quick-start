@@ -18,6 +18,10 @@
 		F53419D22448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F53419DE2448522E0026A4DA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419DD2448522E0026A4DA /* NotificationService.swift */; };
 		F53419E22448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F53419EF24487E4D0026A4DA /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419ED24487E4D0026A4DA /* InboxViewController.swift */; };
+		F53419F024487E4D0026A4DA /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53419EE24487E4D0026A4DA /* InboxViewController.xib */; };
+		F53419F324487EE80026A4DA /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419F124487EE80026A4DA /* InboxTableViewCell.swift */; };
+		F53419F424487EE80026A4DA /* InboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53419F224487EE80026A4DA /* InboxTableViewCell.xib */; };
 		F5D786D42448411400739D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D32448411400739D6D /* AppDelegate.swift */; };
 		F5D786D62448411500739D6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D52448411500739D6D /* SceneDelegate.swift */; };
 		F5D786D82448411500739D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D72448411500739D6D /* ViewController.swift */; };
@@ -98,6 +102,10 @@
 		F53419DD2448522E0026A4DA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		F53419DF2448522E0026A4DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53419EC244857230026A4DA /* NetmeraSampleNotificationContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraSampleNotificationContentExtension.entitlements; sourceTree = "<group>"; };
+		F53419ED24487E4D0026A4DA /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		F53419EE24487E4D0026A4DA /* InboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
+		F53419F124487EE80026A4DA /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		F53419F224487EE80026A4DA /* InboxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTableViewCell.xib; sourceTree = "<group>"; };
 		F5D786D02448411400739D6D /* NetmeraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D786D32448411400739D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D786D52448411500739D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +215,17 @@
 			path = NetmeraSampleNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
+		F53419F5244880F40026A4DA /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				F53419ED24487E4D0026A4DA /* InboxViewController.swift */,
+				F53419EE24487E4D0026A4DA /* InboxViewController.xib */,
+				F53419F124487EE80026A4DA /* InboxTableViewCell.swift */,
+				F53419F224487EE80026A4DA /* InboxTableViewCell.xib */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
 		F5D786C72448411400739D6D = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +259,7 @@
 				F5D786D32448411400739D6D /* AppDelegate.swift */,
 				F5D786D52448411500739D6D /* SceneDelegate.swift */,
 				F5D786D72448411500739D6D /* ViewController.swift */,
+				F53419F5244880F40026A4DA /* Inbox */,
 				F5D786D92448411500739D6D /* Main.storyboard */,
 				F5D786DC2448411700739D6D /* Assets.xcassets */,
 				F5D786DE2448411700739D6D /* LaunchScreen.storyboard */,
@@ -437,7 +457,9 @@
 			files = (
 				F5D786E02448411700739D6D /* LaunchScreen.storyboard in Resources */,
 				F5D786DD2448411700739D6D /* Assets.xcassets in Resources */,
+				F53419F424487EE80026A4DA /* InboxTableViewCell.xib in Resources */,
 				F5D786DB2448411500739D6D /* Main.storyboard in Resources */,
+				F53419F024487E4D0026A4DA /* InboxViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +611,8 @@
 				F5D786D82448411500739D6D /* ViewController.swift in Sources */,
 				F5D786D42448411400739D6D /* AppDelegate.swift in Sources */,
 				F5D786D62448411500739D6D /* SceneDelegate.swift in Sources */,
+				F53419F324487EE80026A4DA /* InboxTableViewCell.swift in Sources */,
+				F53419EF24487E4D0026A4DA /* InboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
