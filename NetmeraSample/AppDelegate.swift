@@ -28,10 +28,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Netmera.setBaseURL("YOUR_BASE_URL")
         Netmera.setAPIKey("SET_YOUR_API_KEY")
         Netmera.setAppGroupName("group.com.netmera.NetmeraSample")
-        Netmera.requestPushNotificationAuthorization(forTypes: [.alert,.sound])
         Netmera.setLogLevel(NetmeraLogLevel.debug)
+
+        
+        Netmera.requestPushNotificationAuthorization(forTypes: [.alert,.sound])
 //        Netmera.setPushDelegate(self)
 //        Netmera.setEnabledPopupPresentation(true)
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        // Detect deeplink
+        if let scheme = url.scheme, scheme == "netmeraSample" {
+            // When you catch the deeplink you can access the parameters.
+            // You can then do whatever you want here.
+        }
+        return true
     }
 
     // MARK: UISceneSession Lifecycle
