@@ -29,9 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Netmera.setAPIKey("SET_YOUR_API_KEY")
         Netmera.setAppGroupName("group.com.netmera.NetmeraSample")
         Netmera.setLogLevel(NetmeraLogLevel.debug)
-
-        
-        Netmera.requestPushNotificationAuthorization(forTypes: [.alert,.sound])
 //        Netmera.setPushDelegate(self)
 //        Netmera.setEnabledPopupPresentation(true)
     }
