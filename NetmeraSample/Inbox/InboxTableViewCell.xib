@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eLy-Vc-ywQ" customClass="InboxTableViewCell" customModule="NetBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eLy-Vc-ywQ" id="kuG-cf-vUW">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I8W-yk-UNh">
+                        <rect key="frame" x="16" y="8" width="288" height="151"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-as-Okl">
+                                <rect key="frame" x="0.0" y="61.5" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="QtO-Ka-dFM"/>
+                                    <constraint firstAttribute="height" constant="28" id="Yfw-rK-7AU"/>
+                                </constraints>
+                                <state key="normal" image="checkmark.square" catalog="system"/>
+                                <state key="selected" image="checkmark.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="touchedCheckButton:" destination="eLy-Vc-ywQ" eventType="touchUpInside" id="5Ml-BB-N8D"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="020-pq-Atf">
+                                <rect key="frame" x="33" y="31.5" width="255" height="88.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFA-17-Kax">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMC-4w-tYS">
+                                        <rect key="frame" x="0.0" y="37.5" width="255" height="26.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-Ux-6rK">
+                                        <rect key="frame" x="0.0" y="68" width="255" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b46-yy-gPU">
+                        <rect key="frame" x="16" y="158" width="288" height="1"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ft5-Hx-VdX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I8W-yk-UNh" firstAttribute="top" secondItem="kuG-cf-vUW" secondAttribute="top" constant="8" id="B1i-qg-2zH"/>
+                    <constraint firstItem="I8W-yk-UNh" firstAttribute="leading" secondItem="kuG-cf-vUW" secondAttribute="leading" constant="16" id="fvx-tL-wJW"/>
+                    <constraint firstAttribute="trailing" secondItem="I8W-yk-UNh" secondAttribute="trailing" constant="16" id="jDV-Ro-TnZ"/>
+                    <constraint firstAttribute="trailing" secondItem="b46-yy-gPU" secondAttribute="trailing" constant="16" id="qMI-Vn-uk1"/>
+                    <constraint firstAttribute="bottom" secondItem="I8W-yk-UNh" secondAttribute="bottom" id="r6n-6O-ycR"/>
+                    <constraint firstAttribute="bottom" secondItem="b46-yy-gPU" secondAttribute="bottom" id="vob-Qo-xfq"/>
+                    <constraint firstItem="b46-yy-gPU" firstAttribute="leading" secondItem="kuG-cf-vUW" secondAttribute="leading" constant="16" id="yMa-XR-swx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="AZt-AP-gof"/>
+            <connections>
+                <outlet property="bodyLabel" destination="oDQ-Ux-6rK" id="58P-NH-0VB"/>
+                <outlet property="checkButton" destination="F8t-as-Okl" id="b1N-S5-0dU"/>
+                <outlet property="subtitleLabel" destination="ZMC-4w-tYS" id="iz7-bm-OwP"/>
+                <outlet property="titleLabel" destination="nFA-17-Kax" id="A1S-ct-okQ"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
