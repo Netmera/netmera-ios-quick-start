@@ -1,0 +1,82 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    build_app(workspace: "NetmeraSample.xcworkspace", scheme: "iNeoX")
+    upload_to_testflight
+  end
+
+    lane :beta_enterprise do
+    prepare_enterprise_credentials
+    gym(
+      scheme: 'Netmera_Example',
+      output_directory: beta_dir,
+      xcargs: "PROVISIONING_PROFILE=#{lane_context[SharedValues::SIGH_UDID]}",
+      export_options: {
+      method: "enterprise",
+      manifest: {
+        appURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/IneoNova/iNeo.ipa",
+        displayImageURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/icon180.png",
+        fullSizeImageURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/icon180.png",
+        },
+      }
+    )
+  end
+  
+  lane :prepare_development_credentials do
+    match(readonly:true)
+  end
+
+  lane :prepare_production_credentials do
+    match(readonly:true, type: "adhoc")
+  end
+  
+  lane :prepare_enterprise_credentials do
+    match(readonly:true, type: "enterprise")
+  end
+  
+  lane :carthage_beta do
+  
+  carthage(
+    # frameworks: ['Netmera-framework'],   # Specify which frameworks to archive (only for the archive command)
+    # output: 'Netmera.framework.zip',      # Specify the output archive name (only for the archive command)
+    command: 'build',       # One of: build, bootstrap, update, archive. (default: bootstrap)
+    # dependencies: ["MMWormhole", "FMDB", "UICKeyChainStore", "AFNetworking/NSURLSession"],# Specify which dependencies to update or build (only for update, build and bootstrap commands)
+    # use_ssh: false,   # Use SSH for downloading GitHub repositories.
+    # use_submodules: false,      # Add dependencies as Git submodules.
+    # use_binaries: true,         # Check out dependency repositories even when prebuilt frameworks exist
+    # no_build: false,  # When bootstrapping Carthage do not build
+    no_skip_current: true,     # Don't skip building the current project (only for frameworks)
+    verbose: true,   # Print xcodebuild output inline
+    platform: "iOS",  # Define which platform to build for (one of ‘all’, ‘Mac’, ‘iOS’, ‘watchOS’, ‘tvOS‘, or comma-separated values of the formers except for ‘all’)
+    configuration: "Release",   # Build configuration to use when building
+    # cache_builds: true,         # By default Carthage will rebuild a dependency regardless of whether its the same resolved version as before.
+    # toolchain: "com.apple.dt.toolchain.Swift_2_3",  # Specify the xcodebuild toolchain
+    # new_resolver: false,        # Use the new resolver to resolve depdendency graph
+    # log_path: "carthage.log"    # Path to the xcode build output
+  )
+
+  carthage(
+    frameworks: ['Netmera'],   # Specify which frameworks to archive (only for the archive command)
+    output: 'Netmera.framework.zip',      # Specify the output archive name (only for the archive command)
+    command: 'archive',       # One of: build, bootstrap, update, archive. (default: bootstrap)
+  )
+  end
+  
+end

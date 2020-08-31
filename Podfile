@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '9.0'
 
 #use_frameworks!
 
@@ -46,6 +46,11 @@ target 'iNeoX' do
   pod 'Netmera', :path => '../ineo/.'
   pod 'GoogleTagManager', '~> 6.0'
   pod 'Firebase/Analytics'
+end
+
+target 'NetmeraCarthage' do
+  use_frameworks!
+  pod 'Netmera', :path => '../ineo/.'
 end
 
 plugin 'cocoapods-keys', {

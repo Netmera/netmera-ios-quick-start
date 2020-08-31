@@ -4,25 +4,58 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NetmeraSample.xcscheme_^#shared#^_</key>
+		<key>NetmeraCarthage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>28</integer>
+			<integer>2</integer>
 		</dict>
-		<key>NetmeraSampleNotificationContentExtension.xcscheme_^#shared#^_</key>
+		<key>NetmeraSample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>31</integer>
+			<integer>0</integer>
 		</dict>
-		<key>NetmeraSampleNotificationServiceExtension.xcscheme_^#shared#^_</key>
+		<key>iNeoX.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>1</integer>
 		</dict>
-		<key>iNeoX.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F53419C32448521A0026A4DA</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>30</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F53419DA2448522E0026A4DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5CCE6BA24FCE92E00BEECE0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5D786CF2448411400739D6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5D786E52448411800739D6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5D786F02448411800739D6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5F6DA5224FD2C9900F963BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
