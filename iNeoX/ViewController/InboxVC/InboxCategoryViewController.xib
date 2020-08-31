@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InboxCategoryViewController" customModule="iNeo" customModuleProvider="target">
+            <connections>
+                <outlet property="pageSizeLabel" destination="JbS-Or-UZb" id="RuP-WV-MfA"/>
+                <outlet property="segmentControl" destination="RSD-BJ-5yV" id="TL6-oi-mt1"/>
+                <outlet property="stepper" destination="F5g-kb-T3C" id="8K0-s5-wHc"/>
+                <outlet property="tableView" destination="FRB-kH-PoT" id="Vt5-nO-vsQ"/>
+                <outlet property="view" destination="6l0-3L-0sL" id="8sg-c7-6Dz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6l0-3L-0sL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FRB-kH-PoT">
+                    <rect key="frame" x="0.0" y="256" width="414" height="640"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-qF-cDU">
+                    <rect key="frame" x="16" y="60" width="382" height="180"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g9R-D0-aTz">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
+                            <subviews>
+                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-kb-T3C">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                    <connections>
+                                        <action selector="valueChangedStepper:" destination="-1" eventType="valueChanged" id="XUu-Gs-PI8"/>
+                                    </connections>
+                                </stepper>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbS-Or-UZb">
+                                    <rect key="frame" x="114" y="0.0" width="268" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RSD-BJ-5yV">
+                            <rect key="frame" x="0.0" y="47" width="382" height="32"/>
+                            <segments>
+                                <segment title="Read"/>
+                                <segment title="Unread"/>
+                                <segment title="Deleted"/>
+                                <segment title="All"/>
+                            </segments>
+                            <connections>
+                                <action selector="valueChangedSegment:" destination="-1" eventType="valueChanged" id="eea-wA-snL"/>
+                            </connections>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yE-uB-qtk">
+                            <rect key="frame" x="0.0" y="93" width="382" height="36"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Acb-PL-Efw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="Filter">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="touchedFilterButton:" destination="-1" eventType="touchUpInside" id="rcE-45-wZi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-CM-God">
+                            <rect key="frame" x="0.0" y="144" width="382" height="36"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="2ba-Z2-uVk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="Next Page">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="fetchNextPage:" destination="-1" eventType="touchUpInside" id="OVP-nH-ygY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="pW4-qF-cDU" firstAttribute="top" secondItem="RCM-xz-70S" secondAttribute="top" constant="16" id="4Dw-L5-ckV"/>
+                <constraint firstItem="FRB-kH-PoT" firstAttribute="top" secondItem="pW4-qF-cDU" secondAttribute="bottom" constant="16" id="4Vw-U7-mBR"/>
+                <constraint firstAttribute="trailing" secondItem="FRB-kH-PoT" secondAttribute="trailing" id="Ui8-sE-AGG"/>
+                <constraint firstAttribute="bottom" secondItem="FRB-kH-PoT" secondAttribute="bottom" id="Una-oL-ouZ"/>
+                <constraint firstItem="pW4-qF-cDU" firstAttribute="leading" secondItem="6l0-3L-0sL" secondAttribute="leading" constant="16" id="bUy-JH-l0W"/>
+                <constraint firstItem="FRB-kH-PoT" firstAttribute="leading" secondItem="6l0-3L-0sL" secondAttribute="leading" id="xbB-xH-lcW"/>
+                <constraint firstAttribute="trailing" secondItem="pW4-qF-cDU" secondAttribute="trailing" constant="16" id="zzf-rY-vxY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RCM-xz-70S"/>
+            <point key="canvasLocation" x="47.826086956521742" y="63.616071428571423"/>
+        </view>
+    </objects>
+</document>

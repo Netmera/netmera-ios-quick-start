@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>com.tr.muhammedkilinc.flashwords.sub.allaccess.monthly</string>
+	<string>com.tr.muhammedkilinc.flashwords.sub.allaccess.sixmonth</string>
+	<string>com.tr.muhammedkilinc.flashwords.sub.allaccess.threemonth</string>
+	<string>com.tr.muhammedkilinc.flashwords.sub.test.one</string>
+	<string>com.tr.muhammedkilinc.flashwords.sub.test.two</string>
+	<string>com.tr.muhammedkilinc.flashwords.sub.test.three</string>
+</array>
+</plist>

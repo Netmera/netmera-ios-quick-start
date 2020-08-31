@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Netmera
+//import Netmera
 
 class ViewController: UIViewController {
 

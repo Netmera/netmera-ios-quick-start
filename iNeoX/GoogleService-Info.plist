@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>908422388711-3glevmen3tg0f93d64k9tet9b0tvlulk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.908422388711-3glevmen3tg0f93d64k9tet9b0tvlulk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcHbkJ3gUEaXQn1YrzosTXFoYF2LsBiJo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>908422388711</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.inomera.iNeo</string>
+	<key>PROJECT_ID</key>
+	<string>netmera-7e292</string>
+	<key>STORAGE_BUCKET</key>
+	<string>netmera-7e292.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:908422388711:ios:3015e914daa9e473967b42</string>
+	<key>DATABASE_URL</key>
+	<string>https://netmera-7e292.firebaseio.com</string>
+</dict>
+</plist>

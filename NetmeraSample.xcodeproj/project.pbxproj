@@ -3,14 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FCF85CAD4D3CDC24750F6CD /* Pods_NetmeraSampleNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */; };
-		A2DCCFD5522C00320019F4E5 /* Pods_NetmeraSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D477412B75A2DE05DF7CDDC2 /* Pods_NetmeraSample.framework */; };
-		DE4DF5782851A1B9992E9C04 /* Pods_NetmeraSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D26D6B0553E4815D7C56020 /* Pods_NetmeraSampleTests.framework */; };
-		F0055D2276184C89735EEE7F /* Pods_NetmeraSampleNotificationContentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */; };
+		638DA34FF95371A66CBEC545 /* libPods-NetmeraSampleNotificationContentExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA1668F8054064AD10A9920 /* libPods-NetmeraSampleNotificationContentExtension.a */; };
+		63C88847B70E4D10A5C98882 /* libPods-NetmeraSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6745312EB280A5A4114B623 /* libPods-NetmeraSample.a */; };
+		807F5D7E9C5BA3E6E289FFBF /* libPods-NetmeraSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD70AA8F6EC590E3552615D /* libPods-NetmeraSampleTests.a */; };
+		9596B7584F38FEEC84194B04 /* libPods-NetmeraSampleNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27417A46C313BAB5AEDF7851 /* libPods-NetmeraSampleNotificationServiceExtension.a */; };
+		97260CA09CB30EF9FBEFECBE /* libPods-iNeoX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9ABD743D7426A65C67B2FC /* libPods-iNeoX.a */; };
 		F53419C62448521A0026A4DA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53419C52448521A0026A4DA /* UserNotifications.framework */; };
 		F53419C82448521A0026A4DA /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53419C72448521A0026A4DA /* UserNotificationsUI.framework */; };
 		F53419CB2448521A0026A4DA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419CA2448521A0026A4DA /* NotificationViewController.swift */; };
@@ -22,6 +23,90 @@
 		F53419F024487E4D0026A4DA /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53419EE24487E4D0026A4DA /* InboxViewController.xib */; };
 		F53419F324487EE80026A4DA /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53419F124487EE80026A4DA /* InboxTableViewCell.swift */; };
 		F53419F424487EE80026A4DA /* InboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53419F224487EE80026A4DA /* InboxTableViewCell.xib */; };
+		F5CCE6BF24FCE92E00BEECE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6BE24FCE92E00BEECE0 /* AppDelegate.m */; };
+		F5CCE6C224FCE92E00BEECE0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6C124FCE92E00BEECE0 /* SceneDelegate.m */; };
+		F5CCE6C824FCE92E00BEECE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE6C624FCE92E00BEECE0 /* Main.storyboard */; };
+		F5CCE6CA24FCE93000BEECE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE6C924FCE93000BEECE0 /* Assets.xcassets */; };
+		F5CCE6CD24FCE93000BEECE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE6CB24FCE93000BEECE0 /* LaunchScreen.storyboard */; };
+		F5CCE6D024FCE93000BEECE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6CF24FCE93000BEECE0 /* main.m */; };
+		F5CCE70624FCEDAF00BEECE0 /* ReleaseEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6D624FCEDAA00BEECE0 /* ReleaseEnvironment.m */; };
+		F5CCE70724FCEDAF00BEECE0 /* PaymentTransactionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6D924FCEDAB00BEECE0 /* PaymentTransactionDetails.m */; };
+		F5CCE70824FCEDAF00BEECE0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6DD24FCEDAB00BEECE0 /* UIViewControllerExtension.swift */; };
+		F5CCE70924FCEDAF00BEECE0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6DF24FCEDAB00BEECE0 /* MapViewController.swift */; };
+		F5CCE70A24FCEDAF00BEECE0 /* TestWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6E024FCEDAB00BEECE0 /* TestWebVC.m */; };
+		F5CCE70B24FCEDAF00BEECE0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6E124FCEDAB00BEECE0 /* UITableViewExtension.swift */; };
+		F5CCE70C24FCEDAF00BEECE0 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6E224FCEDAB00BEECE0 /* MainVC.m */; };
+		F5CCE70D24FCEDAF00BEECE0 /* ScreenEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6E324FCEDAB00BEECE0 /* ScreenEventVC.m */; };
+		F5CCE70E24FCEDAF00BEECE0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE6E724FCEDAC00BEECE0 /* MapViewController.xib */; };
+		F5CCE71024FCEDAF00BEECE0 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6EA24FCEDAC00BEECE0 /* StoreManager.m */; };
+		F5CCE71124FCEDAF00BEECE0 /* UserUpdateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6EC24FCEDAC00BEECE0 /* UserUpdateVC.m */; };
+		F5CCE71224FCEDAF00BEECE0 /* NetmeraGTMTagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6ED24FCEDAC00BEECE0 /* NetmeraGTMTagManager.m */; };
+		F5CCE71324FCEDAF00BEECE0 /* RestPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6EF24FCEDAD00BEECE0 /* RestPushVC.m */; };
+		F5CCE71424FCEDAF00BEECE0 /* PurchasesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6F024FCEDAD00BEECE0 /* PurchasesListViewController.m */; };
+		F5CCE71524FCEDAF00BEECE0 /* ProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6F124FCEDAD00BEECE0 /* ProductsListViewController.m */; };
+		F5CCE71624FCEDAF00BEECE0 /* PushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6F724FCEDAD00BEECE0 /* PushVC.m */; };
+		F5CCE71824FCEDAF00BEECE0 /* TestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6FB24FCEDAE00BEECE0 /* TestUtil.m */; };
+		F5CCE71924FCEDAF00BEECE0 /* NetmeraEventsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6FC24FCEDAE00BEECE0 /* NetmeraEventsVC.m */; };
+		F5CCE71A24FCEDAF00BEECE0 /* PurchaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6FD24FCEDAE00BEECE0 /* PurchaseModel.m */; };
+		F5CCE71B24FCEDAF00BEECE0 /* StoreObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6FE24FCEDAE00BEECE0 /* StoreObserver.m */; };
+		F5CCE71C24FCEDAF00BEECE0 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE70024FCEDAF00BEECE0 /* TextFieldCell.m */; };
+		F5CCE71D24FCEDAF00BEECE0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE70124FCEDAF00BEECE0 /* Settings.bundle */; };
+		F5CCE71E24FCEDAF00BEECE0 /* ProductIds.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE70224FCEDAF00BEECE0 /* ProductIds.plist */; };
+		F5CCE71F24FCEDAF00BEECE0 /* Netmera-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE70424FCEDAF00BEECE0 /* Netmera-Info.plist */; };
+		F5CCE72224FCEDBB00BEECE0 /* LocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72024FCEDBA00BEECE0 /* LocationVC.m */; };
+		F5CCE72724FCEDC300BEECE0 /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72324FCEDC200BEECE0 /* JSONHelper.m */; };
+		F5CCE72824FCEDC300BEECE0 /* IneoEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72624FCEDC300BEECE0 /* IneoEncryptor.m */; };
+		F5CCE73424FCEDCE00BEECE0 /* InboxCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72924FCEDCD00BEECE0 /* InboxCategoryViewController.swift */; };
+		F5CCE73524FCEDCE00BEECE0 /* InboxCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE72A24FCEDCD00BEECE0 /* InboxCategoryViewController.xib */; };
+		F5CCE73624FCEDCE00BEECE0 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72B24FCEDCD00BEECE0 /* InboxTableViewCell.swift */; };
+		F5CCE73724FCEDCE00BEECE0 /* InAppPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72C24FCEDCD00BEECE0 /* InAppPurchaseViewController.m */; };
+		F5CCE73824FCEDCE00BEECE0 /* InboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE72D24FCEDCD00BEECE0 /* InboxTableViewCell.xib */; };
+		F5CCE73924FCEDCE00BEECE0 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72E24FCEDCD00BEECE0 /* InboxViewController.swift */; };
+		F5CCE73A24FCEDCE00BEECE0 /* InboxCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE72F24FCEDCD00BEECE0 /* InboxCategoryTableViewCell.swift */; };
+		F5CCE73B24FCEDCE00BEECE0 /* InboxCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE73024FCEDCD00BEECE0 /* InboxCategoryTableViewCell.xib */; };
+		F5CCE73C24FCEDCE00BEECE0 /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE73124FCEDCD00BEECE0 /* InboxViewController.xib */; };
+		F5CCE73D24FCEDCE00BEECE0 /* InAppPurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE73324FCEDCE00BEECE0 /* InAppPurchase.storyboard */; };
+		F5CCE74624FCEDDD00BEECE0 /* EnvironmentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE73E24FCEDDC00BEECE0 /* EnvironmentUtil.m */; };
+		F5CCE74724FCEDDD00BEECE0 /* FormTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE73F24FCEDDC00BEECE0 /* FormTableViewController.m */; };
+		F5CCE74824FCEDDD00BEECE0 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE74024FCEDDC00BEECE0 /* Environment.m */; };
+		F5CCE74924FCEDDD00BEECE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE74424FCEDDD00BEECE0 /* GoogleService-Info.plist */; };
+		F5CCE75524FCEDE800BEECE0 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE74A24FCEDE700BEECE0 /* ControlsViewController.swift */; };
+		F5CCE75624FCEDE800BEECE0 /* DebugEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE74B24FCEDE800BEECE0 /* DebugEnvironment.m */; };
+		F5CCE75724FCEDE800BEECE0 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE74D24FCEDE800BEECE0 /* BaseTableVC.m */; };
+		F5CCE75824FCEDE800BEECE0 /* CrashesSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE74E24FCEDE800BEECE0 /* CrashesSwiftViewController.swift */; };
+		F5CCE75924FCEDE800BEECE0 /* DeeplinkRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE74F24FCEDE800BEECE0 /* DeeplinkRouter.m */; };
+		F5CCE75A24FCEDE800BEECE0 /* ControlsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE75224FCEDE800BEECE0 /* ControlsViewController.xib */; };
+		F5CCE75B24FCEDE900BEECE0 /* CrashesObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE75424FCEDE800BEECE0 /* CrashesObjViewController.m */; };
+		F5CCE75E24FCEDF300BEECE0 /* AlertPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE75D24FCEDF300BEECE0 /* AlertPresenter.m */; };
+		F5CCE76024FCEDF800BEECE0 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE75F24FCEDF800BEECE0 /* AppInfo.swift */; };
+		F5CCE7A024FCEFDA00BEECE0 /* CRLCrashStackGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE76F24FCEFDA00BEECE0 /* CRLCrashStackGuard.m */; };
+		F5CCE7A124FCEFDA00BEECE0 /* CRLFramelessDWARF.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77124FCEFDA00BEECE0 /* CRLFramelessDWARF.m */; };
+		F5CCE7A224FCEFDA00BEECE0 /* CRLCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77224FCEFDA00BEECE0 /* CRLCrash.m */; };
+		F5CCE7A324FCEFDA00BEECE0 /* CRLCrashSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77324FCEFDA00BEECE0 /* CRLCrashSwift.swift */; };
+		F5CCE7A424FCEFDA00BEECE0 /* CRLCrashNULL.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77424FCEFDA00BEECE0 /* CRLCrashNULL.m */; };
+		F5CCE7A524FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77524FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.m */; };
+		F5CCE7A624FCEFDA00BEECE0 /* CRLCrashCXXException.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77624FCEFDA00BEECE0 /* CRLCrashCXXException.mm */; };
+		F5CCE7A724FCEFDA00BEECE0 /* CRLCrashCorruptObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77724FCEFDA00BEECE0 /* CRLCrashCorruptObjC.m */; };
+		F5CCE7A824FCEFDA00BEECE0 /* CRLCrashNXPage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77924FCEFDA00BEECE0 /* CRLCrashNXPage.m */; };
+		F5CCE7A924FCEFDA00BEECE0 /* CRLCrashUndefInst.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77B24FCEFDA00BEECE0 /* CRLCrashUndefInst.m */; };
+		F5CCE7AA24FCEFDA00BEECE0 /* CRLCrashObjCException.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77C24FCEFDA00BEECE0 /* CRLCrashObjCException.m */; };
+		F5CCE7AB24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE77D24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.m */; };
+		F5CCE7AC24FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78124FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.m */; };
+		F5CCE7AD24FCEFDA00BEECE0 /* CRLFramelessDWARF_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78224FCEFDA00BEECE0 /* CRLFramelessDWARF_arm64.s */; };
+		F5CCE7AE24FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78324FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.m */; };
+		F5CCE7AF24FCEFDA00BEECE0 /* CRLCrashReleasedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78424FCEFDA00BEECE0 /* CRLCrashReleasedObject.m */; };
+		F5CCE7B024FCEFDA00BEECE0 /* CRLCrashTrap.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78524FCEFDA00BEECE0 /* CRLCrashTrap.m */; };
+		F5CCE7B124FCEFDA00BEECE0 /* CRLFramelessDWARF_i386.s in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78624FCEFDA00BEECE0 /* CRLFramelessDWARF_i386.s */; };
+		F5CCE7B224FCEFDA00BEECE0 /* CRLCrashNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78724FCEFDA00BEECE0 /* CRLCrashNSLog.m */; };
+		F5CCE7B324FCEFDA00BEECE0 /* CRLCrashAbort.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE78A24FCEFDA00BEECE0 /* CRLCrashAbort.m */; };
+		F5CCE7B424FCEFDA00BEECE0 /* CRLFramelessDWARF_arm32.S in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79024FCEFDA00BEECE0 /* CRLFramelessDWARF_arm32.S */; };
+		F5CCE7B524FCEFDA00BEECE0 /* CRLFramelessDWARF_x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79124FCEFDA00BEECE0 /* CRLFramelessDWARF_x86_64.s */; };
+		F5CCE7B624FCEFDA00BEECE0 /* CRLCrashGarbage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79324FCEFDA00BEECE0 /* CRLCrashGarbage.m */; };
+		F5CCE7B724FCEFDA00BEECE0 /* CRLCrashROPage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79424FCEFDA00BEECE0 /* CRLCrashROPage.m */; };
+		F5CCE7B824FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79D24FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.m */; };
+		F5CCE7B924FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79E24FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.m */; };
+		F5CCE7BA24FCEFDA00BEECE0 /* CRLCrashPrivInst.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE79F24FCEFDA00BEECE0 /* CRLCrashPrivInst.m */; };
+		F5CCE7BD24FD0F4900BEECE0 /* container in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE7BC24FD0F4900BEECE0 /* container */; };
 		F5D786D42448411400739D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D32448411400739D6D /* AppDelegate.swift */; };
 		F5D786D62448411500739D6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D52448411500739D6D /* SceneDelegate.swift */; };
 		F5D786D82448411500739D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D786D72448411500739D6D /* ViewController.swift */; };
@@ -80,21 +165,24 @@
 
 /* Begin PBXFileReference section */
 		110501C81934DC6E68EA4771 /* Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		27417A46C313BAB5AEDF7851 /* libPods-NetmeraSampleNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetmeraSampleNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD70AA8F6EC590E3552615D /* libPods-NetmeraSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetmeraSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B74BF37AB7512BFB089ECC /* Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		3600BE7C72D36D24352F9FBF /* Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSample-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		3C21C170DA418D21CEFFD03A /* Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationServiceExtension/Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		461368CFE5E828D7B3EC0D31 /* Pods-iNeoX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNeoX.debug.xcconfig"; path = "Target Support Files/Pods-iNeoX/Pods-iNeoX.debug.xcconfig"; sourceTree = "<group>"; };
+		580B92FC717A4164E6889E9C /* Pods-iNeoX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNeoX.release.xcconfig"; path = "Target Support Files/Pods-iNeoX/Pods-iNeoX.release.xcconfig"; sourceTree = "<group>"; };
 		59DD0E248F77D055251FB3C6 /* Pods-NetmeraSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample.debug.xcconfig"; sourceTree = "<group>"; };
-		7D26D6B0553E4815D7C56020 /* Pods_NetmeraSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906579E8E0796F784843B82E /* Pods-NetmeraSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleTests.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleTests/Pods-NetmeraSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		9BB377769D225C602C31B180 /* Pods-NetmeraSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample.release.xcconfig"; sourceTree = "<group>"; };
 		A4DAE06273571D0ED87DC574 /* Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationContentExtension/Pods-NetmeraSampleNotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A6745312EB280A5A4114B623 /* libPods-NetmeraSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetmeraSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5B0C22189E95E2AFA67F2 /* Pods-NetmeraSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleTests/Pods-NetmeraSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7A5C4D8C27076FB90C11937 /* Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
 		D2D5790D25111FD7AED7B626 /* Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension/Pods-NetmeraSample-NetmeraSampleNotificationContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		D477412B75A2DE05DF7CDDC2 /* Pods_NetmeraSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleNotificationContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97244AD1DFA39BBF0DA72B3 /* Pods-NetmeraSampleNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationContentExtension/Pods-NetmeraSampleNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
-		EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA1668F8054064AD10A9920 /* libPods-NetmeraSampleNotificationContentExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetmeraSampleNotificationContentExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9ABD743D7426A65C67B2FC /* libPods-iNeoX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iNeoX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53419BF2448502F0026A4DA /* NetmeraSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraSample.entitlements; sourceTree = "<group>"; };
 		F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetmeraSampleNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53419C52448521A0026A4DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
@@ -112,6 +200,149 @@
 		F53419EE24487E4D0026A4DA /* InboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
 		F53419F124487EE80026A4DA /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
 		F53419F224487EE80026A4DA /* InboxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTableViewCell.xib; sourceTree = "<group>"; };
+		F5CCE6BB24FCE92E00BEECE0 /* iNeoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNeoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CCE6BD24FCE92E00BEECE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5CCE6BE24FCE92E00BEECE0 /* AppDelegate.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; tabWidth = 2; };
+		F5CCE6C024FCE92E00BEECE0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F5CCE6C124FCE92E00BEECE0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F5CCE6C724FCE92E00BEECE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5CCE6C924FCE93000BEECE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5CCE6CC24FCE93000BEECE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5CCE6CE24FCE93000BEECE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CCE6CF24FCE93000BEECE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5CCE6D424FCEDAA00BEECE0 /* iNeoX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iNeoX-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5CCE6D624FCEDAA00BEECE0 /* ReleaseEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseEnvironment.m; sourceTree = "<group>"; };
+		F5CCE6D724FCEDAA00BEECE0 /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		F5CCE6D824FCEDAB00BEECE0 /* NetmeraGTMTagManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetmeraGTMTagManager.h; sourceTree = "<group>"; };
+		F5CCE6D924FCEDAB00BEECE0 /* PaymentTransactionDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentTransactionDetails.m; sourceTree = "<group>"; };
+		F5CCE6DA24FCEDAB00BEECE0 /* StoreObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreObserver.h; sourceTree = "<group>"; };
+		F5CCE6DC24FCEDAB00BEECE0 /* ProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsListViewController.h; sourceTree = "<group>"; };
+		F5CCE6DD24FCEDAB00BEECE0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F5CCE6DE24FCEDAB00BEECE0 /* UserUpdateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserUpdateVC.h; sourceTree = "<group>"; };
+		F5CCE6DF24FCEDAB00BEECE0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F5CCE6E024FCEDAB00BEECE0 /* TestWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebVC.m; sourceTree = "<group>"; };
+		F5CCE6E124FCEDAB00BEECE0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F5CCE6E224FCEDAB00BEECE0 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		F5CCE6E324FCEDAB00BEECE0 /* ScreenEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenEventVC.m; sourceTree = "<group>"; };
+		F5CCE6E424FCEDAC00BEECE0 /* ReleaseEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseEnvironment.h; sourceTree = "<group>"; };
+		F5CCE6E524FCEDAC00BEECE0 /* PurchaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseModel.h; sourceTree = "<group>"; };
+		F5CCE6E624FCEDAC00BEECE0 /* PaymentTransactionDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentTransactionDetails.h; sourceTree = "<group>"; };
+		F5CCE6E724FCEDAC00BEECE0 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		F5CCE6E824FCEDAC00BEECE0 /* ScreenEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenEventVC.h; sourceTree = "<group>"; };
+		F5CCE6EA24FCEDAC00BEECE0 /* StoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManager.m; sourceTree = "<group>"; };
+		F5CCE6EC24FCEDAC00BEECE0 /* UserUpdateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUpdateVC.m; sourceTree = "<group>"; };
+		F5CCE6ED24FCEDAC00BEECE0 /* NetmeraGTMTagManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetmeraGTMTagManager.m; sourceTree = "<group>"; };
+		F5CCE6EF24FCEDAD00BEECE0 /* RestPushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = RestPushVC.m; sourceTree = "<group>"; tabWidth = 2; };
+		F5CCE6F024FCEDAD00BEECE0 /* PurchasesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasesListViewController.m; sourceTree = "<group>"; };
+		F5CCE6F124FCEDAD00BEECE0 /* ProductsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsListViewController.m; sourceTree = "<group>"; };
+		F5CCE6F224FCEDAD00BEECE0 /* TestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUtil.h; sourceTree = "<group>"; };
+		F5CCE6F324FCEDAD00BEECE0 /* iNeoX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iNeoX-Prefix.pch"; sourceTree = "<group>"; };
+		F5CCE6F424FCEDAD00BEECE0 /* RestPushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestPushVC.h; sourceTree = "<group>"; };
+		F5CCE6F524FCEDAD00BEECE0 /* NetmeraEventsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetmeraEventsVC.h; sourceTree = "<group>"; };
+		F5CCE6F624FCEDAD00BEECE0 /* PurchasesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasesListViewController.h; sourceTree = "<group>"; };
+		F5CCE6F724FCEDAD00BEECE0 /* PushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushVC.m; sourceTree = "<group>"; };
+		F5CCE6F824FCEDAE00BEECE0 /* StoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreManager.h; sourceTree = "<group>"; };
+		F5CCE6F924FCEDAE00BEECE0 /* TestWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebVC.h; sourceTree = "<group>"; };
+		F5CCE6FB24FCEDAE00BEECE0 /* TestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtil.m; sourceTree = "<group>"; };
+		F5CCE6FC24FCEDAE00BEECE0 /* NetmeraEventsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetmeraEventsVC.m; sourceTree = "<group>"; };
+		F5CCE6FD24FCEDAE00BEECE0 /* PurchaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseModel.m; sourceTree = "<group>"; };
+		F5CCE6FE24FCEDAE00BEECE0 /* StoreObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreObserver.m; sourceTree = "<group>"; };
+		F5CCE6FF24FCEDAF00BEECE0 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		F5CCE70024FCEDAF00BEECE0 /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		F5CCE70124FCEDAF00BEECE0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F5CCE70224FCEDAF00BEECE0 /* ProductIds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductIds.plist; sourceTree = "<group>"; };
+		F5CCE70324FCEDAF00BEECE0 /* PushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushVC.h; sourceTree = "<group>"; };
+		F5CCE70424FCEDAF00BEECE0 /* Netmera-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Netmera-Info.plist"; sourceTree = "<group>"; };
+		F5CCE72024FCEDBA00BEECE0 /* LocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationVC.m; sourceTree = "<group>"; };
+		F5CCE72124FCEDBB00BEECE0 /* LocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationVC.h; sourceTree = "<group>"; };
+		F5CCE72324FCEDC200BEECE0 /* JSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHelper.m; sourceTree = "<group>"; };
+		F5CCE72424FCEDC200BEECE0 /* IneoEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IneoEncryptor.h; sourceTree = "<group>"; };
+		F5CCE72524FCEDC200BEECE0 /* JSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHelper.h; sourceTree = "<group>"; };
+		F5CCE72624FCEDC300BEECE0 /* IneoEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IneoEncryptor.m; sourceTree = "<group>"; };
+		F5CCE72924FCEDCD00BEECE0 /* InboxCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxCategoryViewController.swift; sourceTree = "<group>"; };
+		F5CCE72A24FCEDCD00BEECE0 /* InboxCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxCategoryViewController.xib; sourceTree = "<group>"; };
+		F5CCE72B24FCEDCD00BEECE0 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		F5CCE72C24FCEDCD00BEECE0 /* InAppPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseViewController.m; sourceTree = "<group>"; };
+		F5CCE72D24FCEDCD00BEECE0 /* InboxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxTableViewCell.xib; sourceTree = "<group>"; };
+		F5CCE72E24FCEDCD00BEECE0 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		F5CCE72F24FCEDCD00BEECE0 /* InboxCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		F5CCE73024FCEDCD00BEECE0 /* InboxCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		F5CCE73124FCEDCD00BEECE0 /* InboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
+		F5CCE73224FCEDCE00BEECE0 /* InAppPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseViewController.h; sourceTree = "<group>"; };
+		F5CCE73324FCEDCE00BEECE0 /* InAppPurchase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InAppPurchase.storyboard; sourceTree = "<group>"; };
+		F5CCE73E24FCEDDC00BEECE0 /* EnvironmentUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentUtil.m; sourceTree = "<group>"; };
+		F5CCE73F24FCEDDC00BEECE0 /* FormTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormTableViewController.m; sourceTree = "<group>"; };
+		F5CCE74024FCEDDC00BEECE0 /* Environment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
+		F5CCE74124FCEDDC00BEECE0 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		F5CCE74224FCEDDC00BEECE0 /* FormTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTableViewController.h; sourceTree = "<group>"; };
+		F5CCE74324FCEDDC00BEECE0 /* EnvironmentUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentUtil.h; sourceTree = "<group>"; };
+		F5CCE74424FCEDDD00BEECE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5CCE74524FCEDDD00BEECE0 /* IAPTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPTableViewDataSource.h; sourceTree = "<group>"; };
+		F5CCE74A24FCEDE700BEECE0 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
+		F5CCE74B24FCEDE800BEECE0 /* DebugEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugEnvironment.m; sourceTree = "<group>"; };
+		F5CCE74C24FCEDE800BEECE0 /* DeeplinkRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeeplinkRouter.h; sourceTree = "<group>"; };
+		F5CCE74D24FCEDE800BEECE0 /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
+		F5CCE74E24FCEDE800BEECE0 /* CrashesSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashesSwiftViewController.swift; sourceTree = "<group>"; };
+		F5CCE74F24FCEDE800BEECE0 /* DeeplinkRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeeplinkRouter.m; sourceTree = "<group>"; };
+		F5CCE75024FCEDE800BEECE0 /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
+		F5CCE75124FCEDE800BEECE0 /* DebugEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugEnvironment.h; sourceTree = "<group>"; };
+		F5CCE75224FCEDE800BEECE0 /* ControlsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlsViewController.xib; sourceTree = "<group>"; };
+		F5CCE75324FCEDE800BEECE0 /* CrashesObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashesObjViewController.h; sourceTree = "<group>"; };
+		F5CCE75424FCEDE800BEECE0 /* CrashesObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashesObjViewController.m; sourceTree = "<group>"; };
+		F5CCE75C24FCEDF300BEECE0 /* AlertPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertPresenter.h; sourceTree = "<group>"; };
+		F5CCE75D24FCEDF300BEECE0 /* AlertPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertPresenter.m; sourceTree = "<group>"; };
+		F5CCE75F24FCEDF800BEECE0 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		F5CCE76F24FCEFDA00BEECE0 /* CRLCrashStackGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashStackGuard.m; sourceTree = "<group>"; };
+		F5CCE77024FCEFDA00BEECE0 /* CRLCrashAbort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashAbort.h; sourceTree = "<group>"; };
+		F5CCE77124FCEFDA00BEECE0 /* CRLFramelessDWARF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFramelessDWARF.m; sourceTree = "<group>"; };
+		F5CCE77224FCEFDA00BEECE0 /* CRLCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrash.m; sourceTree = "<group>"; };
+		F5CCE77324FCEFDA00BEECE0 /* CRLCrashSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRLCrashSwift.swift; sourceTree = "<group>"; };
+		F5CCE77424FCEFDA00BEECE0 /* CRLCrashNULL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashNULL.m; sourceTree = "<group>"; };
+		F5CCE77524FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashAsyncSafeThread.m; sourceTree = "<group>"; };
+		F5CCE77624FCEFDA00BEECE0 /* CRLCrashCXXException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CRLCrashCXXException.mm; sourceTree = "<group>"; };
+		F5CCE77724FCEFDA00BEECE0 /* CRLCrashCorruptObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashCorruptObjC.m; sourceTree = "<group>"; };
+		F5CCE77824FCEFDA00BEECE0 /* CRLCrashROPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashROPage.h; sourceTree = "<group>"; };
+		F5CCE77924FCEFDA00BEECE0 /* CRLCrashNXPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashNXPage.m; sourceTree = "<group>"; };
+		F5CCE77A24FCEFDA00BEECE0 /* CRLCrashGarbage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashGarbage.h; sourceTree = "<group>"; };
+		F5CCE77B24FCEFDA00BEECE0 /* CRLCrashUndefInst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashUndefInst.m; sourceTree = "<group>"; };
+		F5CCE77C24FCEFDA00BEECE0 /* CRLCrashObjCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashObjCException.m; sourceTree = "<group>"; };
+		F5CCE77D24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashSmashStackTop.m; sourceTree = "<group>"; };
+		F5CCE77E24FCEFDA00BEECE0 /* CRLCrashPrivInst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashPrivInst.h; sourceTree = "<group>"; };
+		F5CCE77F24FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashCorruptMalloc.h; sourceTree = "<group>"; };
+		F5CCE78024FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashObjCMsgSend.h; sourceTree = "<group>"; };
+		F5CCE78124FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashSmashStackBottom.m; sourceTree = "<group>"; };
+		F5CCE78224FCEFDA00BEECE0 /* CRLFramelessDWARF_arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CRLFramelessDWARF_arm64.s; sourceTree = "<group>"; };
+		F5CCE78324FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashOverwriteLinkRegister.m; sourceTree = "<group>"; };
+		F5CCE78424FCEFDA00BEECE0 /* CRLCrashReleasedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashReleasedObject.m; sourceTree = "<group>"; };
+		F5CCE78524FCEFDA00BEECE0 /* CRLCrashTrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashTrap.m; sourceTree = "<group>"; };
+		F5CCE78624FCEFDA00BEECE0 /* CRLFramelessDWARF_i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CRLFramelessDWARF_i386.s; sourceTree = "<group>"; };
+		F5CCE78724FCEFDA00BEECE0 /* CRLCrashNSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashNSLog.m; sourceTree = "<group>"; };
+		F5CCE78824FCEFDA00BEECE0 /* CRLFramelessDWARF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFramelessDWARF.h; sourceTree = "<group>"; };
+		F5CCE78924FCEFDA00BEECE0 /* CRLCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrash.h; sourceTree = "<group>"; };
+		F5CCE78A24FCEFDA00BEECE0 /* CRLCrashAbort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashAbort.m; sourceTree = "<group>"; };
+		F5CCE78B24FCEFDA00BEECE0 /* CRLCrashStackGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashStackGuard.h; sourceTree = "<group>"; };
+		F5CCE78C24FCEFDA00BEECE0 /* CRLCrashNULL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashNULL.h; sourceTree = "<group>"; };
+		F5CCE78D24FCEFDA00BEECE0 /* CRLCrashCXXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashCXXException.h; sourceTree = "<group>"; };
+		F5CCE78E24FCEFDA00BEECE0 /* CRLCrashObjCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashObjCException.h; sourceTree = "<group>"; };
+		F5CCE78F24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashSmashStackTop.h; sourceTree = "<group>"; };
+		F5CCE79024FCEFDA00BEECE0 /* CRLFramelessDWARF_arm32.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CRLFramelessDWARF_arm32.S; sourceTree = "<group>"; };
+		F5CCE79124FCEFDA00BEECE0 /* CRLFramelessDWARF_x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CRLFramelessDWARF_x86_64.s; sourceTree = "<group>"; };
+		F5CCE79224FCEFDA00BEECE0 /* CRLCrashUndefInst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashUndefInst.h; sourceTree = "<group>"; };
+		F5CCE79324FCEFDA00BEECE0 /* CRLCrashGarbage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashGarbage.m; sourceTree = "<group>"; };
+		F5CCE79424FCEFDA00BEECE0 /* CRLCrashROPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashROPage.m; sourceTree = "<group>"; };
+		F5CCE79524FCEFDA00BEECE0 /* CRLCrashNXPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashNXPage.h; sourceTree = "<group>"; };
+		F5CCE79624FCEFDA00BEECE0 /* CRLCrashCorruptObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashCorruptObjC.h; sourceTree = "<group>"; };
+		F5CCE79724FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashAsyncSafeThread.h; sourceTree = "<group>"; };
+		F5CCE79824FCEFDA00BEECE0 /* CRLCrashNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashNSLog.h; sourceTree = "<group>"; };
+		F5CCE79924FCEFDA00BEECE0 /* CRLCrashTrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashTrap.h; sourceTree = "<group>"; };
+		F5CCE79A24FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashOverwriteLinkRegister.h; sourceTree = "<group>"; };
+		F5CCE79B24FCEFDA00BEECE0 /* CRLCrashReleasedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashReleasedObject.h; sourceTree = "<group>"; };
+		F5CCE79C24FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLCrashSmashStackBottom.h; sourceTree = "<group>"; };
+		F5CCE79D24FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashObjCMsgSend.m; sourceTree = "<group>"; };
+		F5CCE79E24FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashCorruptMalloc.m; sourceTree = "<group>"; };
+		F5CCE79F24FCEFDA00BEECE0 /* CRLCrashPrivInst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashPrivInst.m; sourceTree = "<group>"; };
+		F5CCE7BB24FCF20A00BEECE0 /* iNeoX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iNeoX.entitlements; sourceTree = "<group>"; };
+		F5CCE7BC24FD0F4900BEECE0 /* container */ = {isa = PBXFileReference; lastKnownFileType = folder; path = container; sourceTree = "<group>"; };
 		F5D786D02448411400739D6D /* NetmeraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D786D32448411400739D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D786D52448411500739D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +366,7 @@
 			files = (
 				F53419C82448521A0026A4DA /* UserNotificationsUI.framework in Frameworks */,
 				F53419C62448521A0026A4DA /* UserNotifications.framework in Frameworks */,
-				F0055D2276184C89735EEE7F /* Pods_NetmeraSampleNotificationContentExtension.framework in Frameworks */,
+				638DA34FF95371A66CBEC545 /* libPods-NetmeraSampleNotificationContentExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +374,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FCF85CAD4D3CDC24750F6CD /* Pods_NetmeraSampleNotificationServiceExtension.framework in Frameworks */,
+				9596B7584F38FEEC84194B04 /* libPods-NetmeraSampleNotificationServiceExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCE6B824FCE92E00BEECE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97260CA09CB30EF9FBEFECBE /* libPods-iNeoX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +390,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DCCFD5522C00320019F4E5 /* Pods_NetmeraSample.framework in Frameworks */,
+				63C88847B70E4D10A5C98882 /* libPods-NetmeraSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +398,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4DF5782851A1B9992E9C04 /* Pods_NetmeraSampleTests.framework in Frameworks */,
+				807F5D7E9C5BA3E6E289FFBF /* libPods-NetmeraSampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +427,8 @@
 				E97244AD1DFA39BBF0DA72B3 /* Pods-NetmeraSampleNotificationContentExtension.release.xcconfig */,
 				3C21C170DA418D21CEFFD03A /* Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig */,
 				32B74BF37AB7512BFB089ECC /* Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig */,
+				461368CFE5E828D7B3EC0D31 /* Pods-iNeoX.debug.xcconfig */,
+				580B92FC717A4164E6889E9C /* Pods-iNeoX.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,12 +436,13 @@
 		6CCE4284C70C768924706EF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D477412B75A2DE05DF7CDDC2 /* Pods_NetmeraSample.framework */,
-				7D26D6B0553E4815D7C56020 /* Pods_NetmeraSampleTests.framework */,
 				F53419C52448521A0026A4DA /* UserNotifications.framework */,
 				F53419C72448521A0026A4DA /* UserNotificationsUI.framework */,
-				E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */,
-				EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */,
+				A6745312EB280A5A4114B623 /* libPods-NetmeraSample.a */,
+				EBA1668F8054064AD10A9920 /* libPods-NetmeraSampleNotificationContentExtension.a */,
+				27417A46C313BAB5AEDF7851 /* libPods-NetmeraSampleNotificationServiceExtension.a */,
+				2AD70AA8F6EC590E3552615D /* libPods-NetmeraSampleTests.a */,
+				EF9ABD743D7426A65C67B2FC /* libPods-iNeoX.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,6 +480,267 @@
 			path = Inbox;
 			sourceTree = "<group>";
 		};
+		F5CCE6BC24FCE92E00BEECE0 /* iNeoX */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE7BC24FD0F4900BEECE0 /* container */,
+				F5CCE7BB24FCF20A00BEECE0 /* iNeoX.entitlements */,
+				F5CCE6BD24FCE92E00BEECE0 /* AppDelegate.h */,
+				F5CCE6BE24FCE92E00BEECE0 /* AppDelegate.m */,
+				F5CCE6C024FCE92E00BEECE0 /* SceneDelegate.h */,
+				F5CCE6C124FCE92E00BEECE0 /* SceneDelegate.m */,
+				F5CCE76E24FCEFDA00BEECE0 /* CrashProbe */,
+				F5CCE76724FCEEB400BEECE0 /* ViewController */,
+				F5CCE70424FCEDAF00BEECE0 /* Netmera-Info.plist */,
+				F5CCE6F324FCEDAD00BEECE0 /* iNeoX-Prefix.pch */,
+				F5CCE6D824FCEDAB00BEECE0 /* NetmeraGTMTagManager.h */,
+				F5CCE6ED24FCEDAC00BEECE0 /* NetmeraGTMTagManager.m */,
+				F5CCE75F24FCEDF800BEECE0 /* AppInfo.swift */,
+				F5CCE76924FCEEE400BEECE0 /* Helper */,
+				F5CCE72424FCEDC200BEECE0 /* IneoEncryptor.h */,
+				F5CCE72624FCEDC300BEECE0 /* IneoEncryptor.m */,
+				F5CCE76224FCEE2E00BEECE0 /* Environment */,
+				F5CCE74424FCEDDD00BEECE0 /* GoogleService-Info.plist */,
+				F5CCE76124FCEE1A00BEECE0 /* InAppPurchase */,
+				F5CCE70124FCEDAF00BEECE0 /* Settings.bundle */,
+				F5CCE6E124FCEDAB00BEECE0 /* UITableViewExtension.swift */,
+				F5CCE6DD24FCEDAB00BEECE0 /* UIViewControllerExtension.swift */,
+				F5CCE6C624FCE92E00BEECE0 /* Main.storyboard */,
+				F5CCE6C924FCE93000BEECE0 /* Assets.xcassets */,
+				F5CCE6CB24FCE93000BEECE0 /* LaunchScreen.storyboard */,
+				F5CCE6CE24FCE93000BEECE0 /* Info.plist */,
+				F5CCE6CF24FCE93000BEECE0 /* main.m */,
+				F5CCE6D424FCEDAA00BEECE0 /* iNeoX-Bridging-Header.h */,
+			);
+			path = iNeoX;
+			sourceTree = "<group>";
+		};
+		F5CCE76124FCEE1A00BEECE0 /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE73324FCEDCE00BEECE0 /* InAppPurchase.storyboard */,
+				F5CCE6E624FCEDAC00BEECE0 /* PaymentTransactionDetails.h */,
+				F5CCE6D924FCEDAB00BEECE0 /* PaymentTransactionDetails.m */,
+				F5CCE74524FCEDDD00BEECE0 /* IAPTableViewDataSource.h */,
+				F5CCE73224FCEDCE00BEECE0 /* InAppPurchaseViewController.h */,
+				F5CCE72C24FCEDCD00BEECE0 /* InAppPurchaseViewController.m */,
+				F5CCE70224FCEDAF00BEECE0 /* ProductIds.plist */,
+				F5CCE6DC24FCEDAB00BEECE0 /* ProductsListViewController.h */,
+				F5CCE6F124FCEDAD00BEECE0 /* ProductsListViewController.m */,
+				F5CCE6E524FCEDAC00BEECE0 /* PurchaseModel.h */,
+				F5CCE6FD24FCEDAE00BEECE0 /* PurchaseModel.m */,
+				F5CCE6F624FCEDAD00BEECE0 /* PurchasesListViewController.h */,
+				F5CCE6F024FCEDAD00BEECE0 /* PurchasesListViewController.m */,
+				F5CCE6F824FCEDAE00BEECE0 /* StoreManager.h */,
+				F5CCE6EA24FCEDAC00BEECE0 /* StoreManager.m */,
+				F5CCE6DA24FCEDAB00BEECE0 /* StoreObserver.h */,
+				F5CCE6FE24FCEDAE00BEECE0 /* StoreObserver.m */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		F5CCE76224FCEE2E00BEECE0 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE75124FCEDE800BEECE0 /* DebugEnvironment.h */,
+				F5CCE74B24FCEDE800BEECE0 /* DebugEnvironment.m */,
+				F5CCE6E424FCEDAC00BEECE0 /* ReleaseEnvironment.h */,
+				F5CCE6D624FCEDAA00BEECE0 /* ReleaseEnvironment.m */,
+				F5CCE74124FCEDDC00BEECE0 /* Environment.h */,
+				F5CCE74024FCEDDC00BEECE0 /* Environment.m */,
+				F5CCE74324FCEDDC00BEECE0 /* EnvironmentUtil.h */,
+				F5CCE73E24FCEDDC00BEECE0 /* EnvironmentUtil.m */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		F5CCE76324FCEE3A00BEECE0 /* CrashVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE75324FCEDE800BEECE0 /* CrashesObjViewController.h */,
+				F5CCE75424FCEDE800BEECE0 /* CrashesObjViewController.m */,
+				F5CCE74E24FCEDE800BEECE0 /* CrashesSwiftViewController.swift */,
+			);
+			path = CrashVC;
+			sourceTree = "<group>";
+		};
+		F5CCE76424FCEE4E00BEECE0 /* InboxVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE72F24FCEDCD00BEECE0 /* InboxCategoryTableViewCell.swift */,
+				F5CCE73024FCEDCD00BEECE0 /* InboxCategoryTableViewCell.xib */,
+				F5CCE72924FCEDCD00BEECE0 /* InboxCategoryViewController.swift */,
+				F5CCE72A24FCEDCD00BEECE0 /* InboxCategoryViewController.xib */,
+				F5CCE72B24FCEDCD00BEECE0 /* InboxTableViewCell.swift */,
+				F5CCE72D24FCEDCD00BEECE0 /* InboxTableViewCell.xib */,
+				F5CCE72E24FCEDCD00BEECE0 /* InboxViewController.swift */,
+				F5CCE73124FCEDCD00BEECE0 /* InboxViewController.xib */,
+			);
+			path = InboxVC;
+			sourceTree = "<group>";
+		};
+		F5CCE76524FCEE5C00BEECE0 /* LocationVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE72124FCEDBB00BEECE0 /* LocationVC.h */,
+				F5CCE72024FCEDBA00BEECE0 /* LocationVC.m */,
+			);
+			path = LocationVC;
+			sourceTree = "<group>";
+		};
+		F5CCE76624FCEE8000BEECE0 /* ScreenEventVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE6E824FCEDAC00BEECE0 /* ScreenEventVC.h */,
+				F5CCE6E324FCEDAB00BEECE0 /* ScreenEventVC.m */,
+			);
+			path = ScreenEventVC;
+			sourceTree = "<group>";
+		};
+		F5CCE76724FCEEB400BEECE0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE6FF24FCEDAF00BEECE0 /* MainVC.h */,
+				F5CCE6E224FCEDAB00BEECE0 /* MainVC.m */,
+				F5CCE6F524FCEDAD00BEECE0 /* NetmeraEventsVC.h */,
+				F5CCE6FC24FCEDAE00BEECE0 /* NetmeraEventsVC.m */,
+				F5CCE6DF24FCEDAB00BEECE0 /* MapViewController.swift */,
+				F5CCE6E724FCEDAC00BEECE0 /* MapViewController.xib */,
+				F5CCE74A24FCEDE700BEECE0 /* ControlsViewController.swift */,
+				F5CCE75224FCEDE800BEECE0 /* ControlsViewController.xib */,
+				F5CCE76324FCEE3A00BEECE0 /* CrashVC */,
+				F5CCE76B24FCEF7300BEECE0 /* Push */,
+				F5CCE76C24FCEF7C00BEECE0 /* Rest */,
+				F5CCE76D24FCEF8700BEECE0 /* Web */,
+				F5CCE76A24FCEF6B00BEECE0 /* UserUpdate */,
+				F5CCE76624FCEE8000BEECE0 /* ScreenEventVC */,
+				F5CCE76424FCEE4E00BEECE0 /* InboxVC */,
+				F5CCE76524FCEE5C00BEECE0 /* LocationVC */,
+				F5CCE76824FCEEC800BEECE0 /* Base */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5CCE76824FCEEC800BEECE0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE75024FCEDE800BEECE0 /* BaseTableVC.h */,
+				F5CCE74D24FCEDE800BEECE0 /* BaseTableVC.m */,
+				F5CCE75C24FCEDF300BEECE0 /* AlertPresenter.h */,
+				F5CCE75D24FCEDF300BEECE0 /* AlertPresenter.m */,
+				F5CCE74224FCEDDC00BEECE0 /* FormTableViewController.h */,
+				F5CCE73F24FCEDDC00BEECE0 /* FormTableViewController.m */,
+				F5CCE6D724FCEDAA00BEECE0 /* TextFieldCell.h */,
+				F5CCE70024FCEDAF00BEECE0 /* TextFieldCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F5CCE76924FCEEE400BEECE0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE74C24FCEDE800BEECE0 /* DeeplinkRouter.h */,
+				F5CCE74F24FCEDE800BEECE0 /* DeeplinkRouter.m */,
+				F5CCE72524FCEDC200BEECE0 /* JSONHelper.h */,
+				F5CCE72324FCEDC200BEECE0 /* JSONHelper.m */,
+				F5CCE6F224FCEDAD00BEECE0 /* TestUtil.h */,
+				F5CCE6FB24FCEDAE00BEECE0 /* TestUtil.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F5CCE76A24FCEF6B00BEECE0 /* UserUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE6DE24FCEDAB00BEECE0 /* UserUpdateVC.h */,
+				F5CCE6EC24FCEDAC00BEECE0 /* UserUpdateVC.m */,
+			);
+			path = UserUpdate;
+			sourceTree = "<group>";
+		};
+		F5CCE76B24FCEF7300BEECE0 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE70324FCEDAF00BEECE0 /* PushVC.h */,
+				F5CCE6F724FCEDAD00BEECE0 /* PushVC.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
+		F5CCE76C24FCEF7C00BEECE0 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE6F424FCEDAD00BEECE0 /* RestPushVC.h */,
+				F5CCE6EF24FCEDAD00BEECE0 /* RestPushVC.m */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		F5CCE76D24FCEF8700BEECE0 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE6F924FCEDAE00BEECE0 /* TestWebVC.h */,
+				F5CCE6E024FCEDAB00BEECE0 /* TestWebVC.m */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		F5CCE76E24FCEFDA00BEECE0 /* CrashProbe */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCE76F24FCEFDA00BEECE0 /* CRLCrashStackGuard.m */,
+				F5CCE77024FCEFDA00BEECE0 /* CRLCrashAbort.h */,
+				F5CCE77124FCEFDA00BEECE0 /* CRLFramelessDWARF.m */,
+				F5CCE77224FCEFDA00BEECE0 /* CRLCrash.m */,
+				F5CCE77324FCEFDA00BEECE0 /* CRLCrashSwift.swift */,
+				F5CCE77424FCEFDA00BEECE0 /* CRLCrashNULL.m */,
+				F5CCE77524FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.m */,
+				F5CCE77624FCEFDA00BEECE0 /* CRLCrashCXXException.mm */,
+				F5CCE77724FCEFDA00BEECE0 /* CRLCrashCorruptObjC.m */,
+				F5CCE77824FCEFDA00BEECE0 /* CRLCrashROPage.h */,
+				F5CCE77924FCEFDA00BEECE0 /* CRLCrashNXPage.m */,
+				F5CCE77A24FCEFDA00BEECE0 /* CRLCrashGarbage.h */,
+				F5CCE77B24FCEFDA00BEECE0 /* CRLCrashUndefInst.m */,
+				F5CCE77C24FCEFDA00BEECE0 /* CRLCrashObjCException.m */,
+				F5CCE77D24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.m */,
+				F5CCE77E24FCEFDA00BEECE0 /* CRLCrashPrivInst.h */,
+				F5CCE77F24FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.h */,
+				F5CCE78024FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.h */,
+				F5CCE78124FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.m */,
+				F5CCE78224FCEFDA00BEECE0 /* CRLFramelessDWARF_arm64.s */,
+				F5CCE78324FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.m */,
+				F5CCE78424FCEFDA00BEECE0 /* CRLCrashReleasedObject.m */,
+				F5CCE78524FCEFDA00BEECE0 /* CRLCrashTrap.m */,
+				F5CCE78624FCEFDA00BEECE0 /* CRLFramelessDWARF_i386.s */,
+				F5CCE78724FCEFDA00BEECE0 /* CRLCrashNSLog.m */,
+				F5CCE78824FCEFDA00BEECE0 /* CRLFramelessDWARF.h */,
+				F5CCE78924FCEFDA00BEECE0 /* CRLCrash.h */,
+				F5CCE78A24FCEFDA00BEECE0 /* CRLCrashAbort.m */,
+				F5CCE78B24FCEFDA00BEECE0 /* CRLCrashStackGuard.h */,
+				F5CCE78C24FCEFDA00BEECE0 /* CRLCrashNULL.h */,
+				F5CCE78D24FCEFDA00BEECE0 /* CRLCrashCXXException.h */,
+				F5CCE78E24FCEFDA00BEECE0 /* CRLCrashObjCException.h */,
+				F5CCE78F24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.h */,
+				F5CCE79024FCEFDA00BEECE0 /* CRLFramelessDWARF_arm32.S */,
+				F5CCE79124FCEFDA00BEECE0 /* CRLFramelessDWARF_x86_64.s */,
+				F5CCE79224FCEFDA00BEECE0 /* CRLCrashUndefInst.h */,
+				F5CCE79324FCEFDA00BEECE0 /* CRLCrashGarbage.m */,
+				F5CCE79424FCEFDA00BEECE0 /* CRLCrashROPage.m */,
+				F5CCE79524FCEFDA00BEECE0 /* CRLCrashNXPage.h */,
+				F5CCE79624FCEFDA00BEECE0 /* CRLCrashCorruptObjC.h */,
+				F5CCE79724FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.h */,
+				F5CCE79824FCEFDA00BEECE0 /* CRLCrashNSLog.h */,
+				F5CCE79924FCEFDA00BEECE0 /* CRLCrashTrap.h */,
+				F5CCE79A24FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.h */,
+				F5CCE79B24FCEFDA00BEECE0 /* CRLCrashReleasedObject.h */,
+				F5CCE79C24FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.h */,
+				F5CCE79D24FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.m */,
+				F5CCE79E24FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.m */,
+				F5CCE79F24FCEFDA00BEECE0 /* CRLCrashPrivInst.m */,
+			);
+			path = CrashProbe;
+			sourceTree = "<group>";
+		};
 		F5D786C72448411400739D6D = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +749,7 @@
 				F5D786F42448411800739D6D /* NetmeraSampleUITests */,
 				F53419C92448521A0026A4DA /* NetmeraSampleNotificationContentExtension */,
 				F53419DC2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */,
+				F5CCE6BC24FCE92E00BEECE0 /* iNeoX */,
 				F5D786D12448411400739D6D /* Products */,
 				2EAE1EF7E8ED44FA5B809DB5 /* Pods */,
 				6CCE4284C70C768924706EF3 /* Frameworks */,
@@ -260,6 +764,7 @@
 				F5D786F12448411800739D6D /* NetmeraSampleUITests.xctest */,
 				F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */,
 				F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */,
+				F5CCE6BB24FCE92E00BEECE0 /* iNeoX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -337,6 +842,25 @@
 			productReference = F53419DB2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F5CCE6BA24FCE92E00BEECE0 /* iNeoX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5CCE6D324FCE93000BEECE0 /* Build configuration list for PBXNativeTarget "iNeoX" */;
+			buildPhases = (
+				2F2975B127245FD9E8FB5555 /* [CP] Check Pods Manifest.lock */,
+				F5CCE6B724FCE92E00BEECE0 /* Sources */,
+				F5CCE6B824FCE92E00BEECE0 /* Frameworks */,
+				F5CCE6B924FCE92E00BEECE0 /* Resources */,
+				6E3B66F9CBAFB6C7FBA377BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iNeoX;
+			productName = iNeoX;
+			productReference = F5CCE6BB24FCE92E00BEECE0 /* iNeoX.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F5D786CF2448411400739D6D /* NetmeraSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D786FA2448411800739D6D /* Build configuration list for PBXNativeTarget "NetmeraSample" */;
@@ -346,6 +870,7 @@
 				F5D786CD2448411400739D6D /* Frameworks */,
 				F5D786CE2448411400739D6D /* Resources */,
 				F53419D62448521A0026A4DA /* Embed App Extensions */,
+				AAA0E89FB458ABE7D1EF61FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,6 +936,10 @@
 					F53419DA2448522E0026A4DA = {
 						CreatedOnToolsVersion = 11.4;
 					};
+					F5CCE6BA24FCE92E00BEECE0 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
 					F5D786CF2448411400739D6D = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -442,6 +971,7 @@
 				F5D786F02448411800739D6D /* NetmeraSampleUITests */,
 				F53419C32448521A0026A4DA /* NetmeraSampleNotificationContentExtension */,
 				F53419DA2448522E0026A4DA /* NetmeraSampleNotificationServiceExtension */,
+				F5CCE6BA24FCE92E00BEECE0 /* iNeoX */,
 			);
 		};
 /* End PBXProject section */
@@ -459,6 +989,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCE6B924FCE92E00BEECE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CCE74924FCEDDD00BEECE0 /* GoogleService-Info.plist in Resources */,
+				F5CCE73824FCEDCE00BEECE0 /* InboxTableViewCell.xib in Resources */,
+				F5CCE71F24FCEDAF00BEECE0 /* Netmera-Info.plist in Resources */,
+				F5CCE6CD24FCE93000BEECE0 /* LaunchScreen.storyboard in Resources */,
+				F5CCE6CA24FCE93000BEECE0 /* Assets.xcassets in Resources */,
+				F5CCE73B24FCEDCE00BEECE0 /* InboxCategoryTableViewCell.xib in Resources */,
+				F5CCE73C24FCEDCE00BEECE0 /* InboxViewController.xib in Resources */,
+				F5CCE71D24FCEDAF00BEECE0 /* Settings.bundle in Resources */,
+				F5CCE75A24FCEDE800BEECE0 /* ControlsViewController.xib in Resources */,
+				F5CCE6C824FCE92E00BEECE0 /* Main.storyboard in Resources */,
+				F5CCE73524FCEDCE00BEECE0 /* InboxCategoryViewController.xib in Resources */,
+				F5CCE70E24FCEDAF00BEECE0 /* MapViewController.xib in Resources */,
+				F5CCE7BD24FD0F4900BEECE0 /* container in Resources */,
+				F5CCE73D24FCEDCE00BEECE0 /* InAppPurchase.storyboard in Resources */,
+				F5CCE71E24FCEDAF00BEECE0 /* ProductIds.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +1043,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F2975B127245FD9E8FB5555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iNeoX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4E6C85DAF17F5F751CAF7ED2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,6 +1087,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6E3B66F9CBAFB6C7FBA377BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iNeoX/Pods-iNeoX-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iNeoX/Pods-iNeoX-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNeoX/Pods-iNeoX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8FEB393CD85751C3BAFA6915 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,6 +1124,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA0E89FB458ABE7D1EF61FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetmeraSample/Pods-NetmeraSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B994CB1B3187E4B305A2F7B9 /* [CP] Check Pods Manifest.lock */ = {
@@ -598,6 +1206,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5CCE6B724FCE92E00BEECE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CCE7B124FCEFDA00BEECE0 /* CRLFramelessDWARF_i386.s in Sources */,
+				F5CCE71824FCEDAF00BEECE0 /* TestUtil.m in Sources */,
+				F5CCE72224FCEDBB00BEECE0 /* LocationVC.m in Sources */,
+				F5CCE70724FCEDAF00BEECE0 /* PaymentTransactionDetails.m in Sources */,
+				F5CCE72824FCEDC300BEECE0 /* IneoEncryptor.m in Sources */,
+				F5CCE70A24FCEDAF00BEECE0 /* TestWebVC.m in Sources */,
+				F5CCE7BA24FCEFDA00BEECE0 /* CRLCrashPrivInst.m in Sources */,
+				F5CCE7B324FCEFDA00BEECE0 /* CRLCrashAbort.m in Sources */,
+				F5CCE71B24FCEDAF00BEECE0 /* StoreObserver.m in Sources */,
+				F5CCE7A424FCEFDA00BEECE0 /* CRLCrashNULL.m in Sources */,
+				F5CCE72724FCEDC300BEECE0 /* JSONHelper.m in Sources */,
+				F5CCE71524FCEDAF00BEECE0 /* ProductsListViewController.m in Sources */,
+				F5CCE71624FCEDAF00BEECE0 /* PushVC.m in Sources */,
+				F5CCE7A324FCEFDA00BEECE0 /* CRLCrashSwift.swift in Sources */,
+				F5CCE7A924FCEFDA00BEECE0 /* CRLCrashUndefInst.m in Sources */,
+				F5CCE7AE24FCEFDA00BEECE0 /* CRLCrashOverwriteLinkRegister.m in Sources */,
+				F5CCE71C24FCEDAF00BEECE0 /* TextFieldCell.m in Sources */,
+				F5CCE71924FCEDAF00BEECE0 /* NetmeraEventsVC.m in Sources */,
+				F5CCE75724FCEDE800BEECE0 /* BaseTableVC.m in Sources */,
+				F5CCE7A624FCEFDA00BEECE0 /* CRLCrashCXXException.mm in Sources */,
+				F5CCE7A824FCEFDA00BEECE0 /* CRLCrashNXPage.m in Sources */,
+				F5CCE7B424FCEFDA00BEECE0 /* CRLFramelessDWARF_arm32.S in Sources */,
+				F5CCE71224FCEDAF00BEECE0 /* NetmeraGTMTagManager.m in Sources */,
+				F5CCE71124FCEDAF00BEECE0 /* UserUpdateVC.m in Sources */,
+				F5CCE7AD24FCEFDA00BEECE0 /* CRLFramelessDWARF_arm64.s in Sources */,
+				F5CCE7A124FCEFDA00BEECE0 /* CRLFramelessDWARF.m in Sources */,
+				F5CCE74724FCEDDD00BEECE0 /* FormTableViewController.m in Sources */,
+				F5CCE7AC24FCEFDA00BEECE0 /* CRLCrashSmashStackBottom.m in Sources */,
+				F5CCE71324FCEDAF00BEECE0 /* RestPushVC.m in Sources */,
+				F5CCE7AA24FCEFDA00BEECE0 /* CRLCrashObjCException.m in Sources */,
+				F5CCE6BF24FCE92E00BEECE0 /* AppDelegate.m in Sources */,
+				F5CCE7B624FCEFDA00BEECE0 /* CRLCrashGarbage.m in Sources */,
+				F5CCE7AF24FCEFDA00BEECE0 /* CRLCrashReleasedObject.m in Sources */,
+				F5CCE7AB24FCEFDA00BEECE0 /* CRLCrashSmashStackTop.m in Sources */,
+				F5CCE74624FCEDDD00BEECE0 /* EnvironmentUtil.m in Sources */,
+				F5CCE73924FCEDCE00BEECE0 /* InboxViewController.swift in Sources */,
+				F5CCE7B724FCEFDA00BEECE0 /* CRLCrashROPage.m in Sources */,
+				F5CCE7B924FCEFDA00BEECE0 /* CRLCrashCorruptMalloc.m in Sources */,
+				F5CCE70B24FCEDAF00BEECE0 /* UITableViewExtension.swift in Sources */,
+				F5CCE75524FCEDE800BEECE0 /* ControlsViewController.swift in Sources */,
+				F5CCE73424FCEDCE00BEECE0 /* InboxCategoryViewController.swift in Sources */,
+				F5CCE70924FCEDAF00BEECE0 /* MapViewController.swift in Sources */,
+				F5CCE74824FCEDDD00BEECE0 /* Environment.m in Sources */,
+				F5CCE73624FCEDCE00BEECE0 /* InboxTableViewCell.swift in Sources */,
+				F5CCE7A224FCEFDA00BEECE0 /* CRLCrash.m in Sources */,
+				F5CCE75E24FCEDF300BEECE0 /* AlertPresenter.m in Sources */,
+				F5CCE7B824FCEFDA00BEECE0 /* CRLCrashObjCMsgSend.m in Sources */,
+				F5CCE71424FCEDAF00BEECE0 /* PurchasesListViewController.m in Sources */,
+				F5CCE70824FCEDAF00BEECE0 /* UIViewControllerExtension.swift in Sources */,
+				F5CCE71A24FCEDAF00BEECE0 /* PurchaseModel.m in Sources */,
+				F5CCE71024FCEDAF00BEECE0 /* StoreManager.m in Sources */,
+				F5CCE70624FCEDAF00BEECE0 /* ReleaseEnvironment.m in Sources */,
+				F5CCE7A524FCEFDA00BEECE0 /* CRLCrashAsyncSafeThread.m in Sources */,
+				F5CCE7B024FCEFDA00BEECE0 /* CRLCrashTrap.m in Sources */,
+				F5CCE75824FCEDE800BEECE0 /* CrashesSwiftViewController.swift in Sources */,
+				F5CCE75924FCEDE800BEECE0 /* DeeplinkRouter.m in Sources */,
+				F5CCE7B524FCEFDA00BEECE0 /* CRLFramelessDWARF_x86_64.s in Sources */,
+				F5CCE75624FCEDE800BEECE0 /* DebugEnvironment.m in Sources */,
+				F5CCE70C24FCEDAF00BEECE0 /* MainVC.m in Sources */,
+				F5CCE6D024FCE93000BEECE0 /* main.m in Sources */,
+				F5CCE6C224FCE92E00BEECE0 /* SceneDelegate.m in Sources */,
+				F5CCE7A724FCEFDA00BEECE0 /* CRLCrashCorruptObjC.m in Sources */,
+				F5CCE7A024FCEFDA00BEECE0 /* CRLCrashStackGuard.m in Sources */,
+				F5CCE76024FCEDF800BEECE0 /* AppInfo.swift in Sources */,
+				F5CCE75B24FCEDE900BEECE0 /* CrashesObjViewController.m in Sources */,
+				F5CCE70D24FCEDAF00BEECE0 /* ScreenEventVC.m in Sources */,
+				F5CCE73724FCEDCE00BEECE0 /* InAppPurchaseViewController.m in Sources */,
+				F5CCE73A24FCEDCE00BEECE0 /* InboxCategoryTableViewCell.swift in Sources */,
+				F5CCE7B224FCEFDA00BEECE0 /* CRLCrashNSLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5D786CC2448411400739D6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -658,6 +1342,22 @@
 				F53419CD2448521A0026A4DA /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		F5CCE6C624FCE92E00BEECE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5CCE6C724FCE92E00BEECE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5CCE6CB24FCE93000BEECE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5CCE6CC24FCE93000BEECE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		F5D786D92448411500739D6D /* Main.storyboard */ = {
@@ -760,6 +1460,59 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationServiceExtension/NetmeraSampleNotificationServiceExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5CCE6D124FCE93000BEECE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461368CFE5E828D7B3EC0D31 /* Pods-iNeoX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = iNeoX/iNeoX.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iNeoX/iNeoX-Prefix.pch";
+				INFOPLIST_FILE = iNeoX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iNeoX/iNeoX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5CCE6D224FCE93000BEECE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 580B92FC717A4164E6889E9C /* Pods-iNeoX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = iNeoX/iNeoX.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iNeoX/iNeoX-Prefix.pch";
+				INFOPLIST_FILE = iNeoX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iNeoX/iNeoX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1024,6 +1777,15 @@
 			buildConfigurations = (
 				F53419E42448522E0026A4DA /* Debug */,
 				F53419E52448522E0026A4DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5CCE6D324FCE93000BEECE0 /* Build configuration list for PBXNativeTarget "iNeoX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CCE6D124FCE93000BEECE0 /* Debug */,
+				F5CCE6D224FCE93000BEECE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

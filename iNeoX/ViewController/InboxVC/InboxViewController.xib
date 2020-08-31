@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InboxViewController" customModule="iNeo" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryLabel" destination="mkZ-Re-JYB" id="ZNO-bA-a5G"/>
+                <outlet property="pageSizeLabel" destination="kO0-Ep-lPu" id="44v-eK-stN"/>
+                <outlet property="segmentControl" destination="XXg-Z0-Je6" id="z7N-MP-PNv"/>
+                <outlet property="statusLabel" destination="FB6-31-IDB" id="dmp-cE-5wh"/>
+                <outlet property="stepper" destination="kfb-OB-hMJ" id="OdM-EW-6rr"/>
+                <outlet property="tableView" destination="k3E-V1-k2T" id="VWl-bp-h7c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k3E-V1-k2T">
+                    <rect key="frame" x="0.0" y="378" width="414" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bL7-m3-Gmj">
+                    <rect key="frame" x="16" y="60" width="382" height="302"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkZ-Re-JYB">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hK4-T8-Oer">
+                            <rect key="frame" x="0.0" y="35.5" width="382" height="36"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfU-di-n0T">
+                                    <rect key="frame" x="0.0" y="0.0" width="120.5" height="36"/>
+                                    <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="73S-aQ-EWP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <state key="normal" title="UnRead All">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchedUnReadAllButton:" destination="-1" eventType="touchUpInside" id="pyF-AK-sxD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODd-Jj-r5d">
+                                    <rect key="frame" x="130.5" y="0.0" width="121" height="36"/>
+                                    <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="PCy-is-Xhv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <state key="normal" title="Delete All">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchedDeleteAllButton:" destination="-1" eventType="touchUpInside" id="zwn-1M-Lfc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cB-uE-nSX">
+                                    <rect key="frame" x="261.5" y="0.0" width="120.5" height="36"/>
+                                    <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="JRl-QZ-n0Q"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <state key="normal" title="Read All">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="touchedReadAllButton:" destination="-1" eventType="touchUpInside" id="cZ1-yS-xlo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1qW-LR-koY">
+                            <rect key="frame" x="0.0" y="86.5" width="382" height="32"/>
+                            <subviews>
+                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kfb-OB-hMJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                    <connections>
+                                        <action selector="valueChangedStepper:" destination="-1" eventType="valueChanged" id="XEK-ck-zJp"/>
+                                    </connections>
+                                </stepper>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-Ep-lPu">
+                                    <rect key="frame" x="114" y="0.0" width="268" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XXg-Z0-Je6">
+                            <rect key="frame" x="0.0" y="133.5" width="382" height="32"/>
+                            <segments>
+                                <segment title="Read"/>
+                                <segment title="Unread"/>
+                                <segment title="Deleted"/>
+                                <segment title="All"/>
+                            </segments>
+                            <connections>
+                                <action selector="valueChangedSegment:" destination="-1" eventType="valueChanged" id="re7-Ox-HUX"/>
+                            </connections>
+                        </segmentedControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB6-31-IDB">
+                            <rect key="frame" x="0.0" y="179.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ev-5G-eXN">
+                            <rect key="frame" x="0.0" y="215" width="382" height="36"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Cac-EQ-TMv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="Filter">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="touchedFilterButton:" destination="-1" eventType="touchUpInside" id="MN9-FT-7tI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrb-5O-FiN">
+                            <rect key="frame" x="0.0" y="266" width="382" height="36"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.19215686269999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Yg2-wF-pKr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="Next Page">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="fetchNextPage:" destination="-1" eventType="touchUpInside" id="6Fj-V4-iah"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="k3E-V1-k2T" secondAttribute="bottom" id="DM7-6C-CxT"/>
+                <constraint firstItem="bL7-m3-Gmj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="USh-lX-K0V"/>
+                <constraint firstItem="k3E-V1-k2T" firstAttribute="top" secondItem="bL7-m3-Gmj" secondAttribute="bottom" constant="16" id="UtY-VH-Bix"/>
+                <constraint firstItem="bL7-m3-Gmj" firstAttribute="top" secondItem="RXn-UR-ENi" secondAttribute="top" constant="16" id="Wfc-4O-abv"/>
+                <constraint firstAttribute="trailing" secondItem="k3E-V1-k2T" secondAttribute="trailing" id="bcD-gG-2Oz"/>
+                <constraint firstAttribute="trailing" secondItem="bL7-m3-Gmj" secondAttribute="trailing" constant="16" id="dlS-wt-2es"/>
+                <constraint firstItem="k3E-V1-k2T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sGy-DD-kb8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RXn-UR-ENi"/>
+            <point key="canvasLocation" x="47.826086956521742" y="63.616071428571423"/>
+        </view>
+    </objects>
+</document>

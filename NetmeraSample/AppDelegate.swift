@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Netmera
+//import Netmera
 import UserNotifications
 
 @UIApplicationMain
