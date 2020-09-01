@@ -164,6 +164,7 @@
 		F502E79124FE3ADF00E8B21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F502E79324FE3ADF00E8B21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F502E79A24FE3B9D00E8B21C /* NotificationContent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationContent.entitlements; sourceTree = "<group>"; };
+		F502E79B24FE499C00E8B21C /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		F53419C52448521A0026A4DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		F53419C72448521A0026A4DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		F5CCE6BB24FCE92E00BEECE0 /* iNeoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNeoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -675,6 +676,7 @@
 			isa = PBXGroup;
 			children = (
 				F5F6DA6724FD2E6C00F963BC /* Fastfile */,
+				F502E79B24FE499C00E8B21C /* Gemfile */,
 				F5F6DA6824FD45F300F963BC /* Cartfile */,
 				F5CCE6BC24FCE92E00BEECE0 /* iNeoX */,
 				F5F6DA5424FD2C9900F963BC /* NetmeraCarthage */,

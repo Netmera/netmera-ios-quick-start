@@ -46,6 +46,31 @@ fastlane ios prepare_enterprise_credentials
 fastlane ios carthage_beta
 ```
 
+### ios deliver_internal_framework
+```
+fastlane ios deliver_internal_framework
+```
+
+### ios deliver_framework
+```
+fastlane ios deliver_framework
+```
+
+### ios release_framework
+```
+fastlane ios release_framework
+```
+
+### ios generate_internal_framework
+```
+fastlane ios generate_internal_framework
+```
+
+### ios generate_framework
+```
+fastlane ios generate_framework
+```
+
 
 ----
 

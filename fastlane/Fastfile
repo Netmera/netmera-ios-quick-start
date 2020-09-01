@@ -16,12 +16,39 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Push a new beta build to TestFlight"
-  lane :beta do
-    build_app(workspace: "NetmeraSample.xcworkspace", scheme: "iNeoX")
-    upload_to_testflight
-  end
+  
+  fastlane_dir = "fastlane/"
+  artifacts_dir = fastlane_dir + "artifacts/"
+  beta_dir = artifacts_dir + "beta/"
+  package_dir = artifacts_dir + "package/"
+  original_profile_dir = '~/Library/MobileDevice/Provisioning\ Profiles/'
+  xcode_server_profile_dir = '/Library/Developer/XcodeServer/ProvisioningProfiles/'
+  derived_data_path = artifacts_dir + "derivedData"
+  test_output_dir = artifacts_dir + "test/"
+  gcovr_out_path = artifacts_dir + "coverage.xml"
+  oclint_out_path = artifacts_dir + "oclint.xml"
+  compilation_database_path = test_output_dir + "report.json-compilation-database"
+  sonar_configuration_path = artifacts_dir + "sonar.properties"
+  filter_pattern = '.*Pod/.*'
+  spec_file = '../../ineo/Netmera.podspec'
 
+  FileUtils.rm_rf(artifacts_dir)
+  FileUtils.mkdir_p(beta_dir)
+  FileUtils.mkdir_p(package_dir)
+
+  def send_via_sftp(local_path, remote_path, create_link=false)
+    require 'net/sftp'
+    Net::SFTP.start('release.netmera.com', ENV['NetmeraSFTPUser'], :password => ENV['NetmeraSFTPPassword'], :port => 3053) do |sftp|
+      sftp.upload!(local_path.to_path, remote_path.to_path)
+      if create_link
+        link_path = (remote_path.dirname + "latest#{remote_path.extname}").to_path
+        sftp.remove!(link_path)
+        sftp.symlink!(remote_path.to_path, link_path)
+      end
+
+    end
+  end
+  
     lane :beta_enterprise do
     prepare_enterprise_credentials
     gym(
@@ -40,15 +67,16 @@ platform :ios do
   end
   
   lane :prepare_development_credentials do
-    match(readonly:true)
+    match()
   end
 
   lane :prepare_production_credentials do
-    match(readonly:true, type: "adhoc")
+    match(type: "adhoc")
   end
   
   lane :prepare_enterprise_credentials do
-    match(readonly:true, type: "enterprise")
+  match(type: "enterprise")
+#    sync_code_signing(type: "enterprise", readonly: true)
   end
   
   lane :carthage_beta do
@@ -77,6 +105,62 @@ platform :ios do
     output: 'Netmera.framework.zip',      # Specify the output archive name (only for the archive command)
     command: 'archive',       # One of: build, bootstrap, update, archive. (default: bootstrap)
   )
+  end
+  
+  
+  
+  lane :deliver_internal_framework do
+    zip_path, spec_path = generate_internal_framework
+    send_via_sftp(zip_path, Pathname.new('/nmsdk/test/ios') + zip_path.basename, true)
+    sh "bundle exec pod repo push --verbose inomera #{spec_path}"
+  end
+
+  lane :deliver_framework do
+    zip_path, spec_path = generate_framework
+    send_via_sftp(zip_path, Pathname.new('/nmsdk/release/ios') + zip_path.basename)
+  end
+
+  lane :release_framework do
+    zip_path, spec_path = generate_framework
+    send_via_sftp(zip_path, Pathname.new('/nmsdk/release/ios') + zip_path.basename, true)
+    sh "pwd"
+    sh "pod trunk push --verbose #{spec_path}"
+  end
+
+  lane :generate_internal_framework do
+    require 'cocoapods-core'
+    spec = Pod::Specification.from_file(spec_file)
+    package_name = "#{spec.name}-#{spec.version}"
+    framework_dir = package_dir + "#{package_name}/"
+    generated_spec_path = framework_dir + "#{spec.name}.podspec"
+    framework_source = {:http => "https://release.netmera.com/test/ios/#{spec.version}.zip"}
+    sh "bundle exec pod package --verbose --embedded --force --subspecs=#{spec.subspecs.map(&:base_name).join(',')} #{spec_file} '#{framework_source}'"
+    sh "mv #{package_name} #{package_dir}"
+
+    # zip framework
+    sh "cd #{framework_dir} && zip -r -X -y #{spec.version}.zip #{spec.available_platforms.map(&:name).join(' ')}"
+    sh "mv #{framework_dir}#{spec.version}.zip #{package_dir}"
+
+    # return zip path
+    [Pathname.new("#{package_dir}#{spec.version}.zip"), Pathname.new(generated_spec_path)]
+  end
+
+  lane :generate_framework do
+    require 'cocoapods-core'
+    spec = Pod::Specification.from_file(spec_file)
+    package_name = "#{spec.name}-#{spec.version}"
+    framework_dir = package_dir + "#{package_name}/"
+    generated_spec_path = framework_dir + "#{spec.name}.podspec"
+    framework_source = {:http => "https://release.netmera.com/release/ios/#{spec.version}.zip"}
+    sh "bundle exec pod package --verbose --embedded --force --subspecs=#{spec.subspecs.map(&:base_name).join(',')} #{spec_file} '#{framework_source}'"
+    sh "mv #{package_name} #{package_dir}"
+
+    # zip framework
+    sh "cd #{framework_dir} && zip -r -X -y #{spec.version}.zip #{spec.available_platforms.map(&:name).join(' ')}"
+    sh "mv #{framework_dir}#{spec.version}.zip #{package_dir}"
+
+    # return zip path
+    [Pathname.new("#{package_dir}#{spec.version}.zip"), Pathname.new(generated_spec_path)]
   end
   
 end
