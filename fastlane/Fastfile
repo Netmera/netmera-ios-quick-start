@@ -25,7 +25,7 @@ platform :ios do
     lane :beta_enterprise do
     prepare_enterprise_credentials
     gym(
-      scheme: 'Netmera_Example',
+      scheme: 'iNeoX',
       output_directory: beta_dir,
       xcargs: "PROVISIONING_PROFILE=#{lane_context[SharedValues::SIGH_UDID]}",
       export_options: {

@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '9.0'
-
 #use_frameworks!
+
 
 def netmera_pod
   pod 'Netmera', :path => '../ineo/.'
@@ -15,32 +15,6 @@ def netmera_notification_content_pod
   pod 'Netmera/NotificationContentExtension', :path => '../ineo/.'
 end
 
-target 'NetmeraSample' do
-  # Comment the next line if you don't want to use dynamic frameworks
-
-  # Pods for NetmeraSample
-  netmera_pod
-
-  target 'NetmeraSampleTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-  
-end
-
-
-target 'NetmeraSampleNotificationContentExtension' do
-
-  netmera_notification_content_pod
-
-end
-
-target 'NetmeraSampleNotificationServiceExtension' do
-
-  netmera_notification_service_pod
-
-end
-
 target 'iNeoX' do
 
   pod 'Netmera', :path => '../ineo/.'
@@ -48,13 +22,21 @@ target 'iNeoX' do
   pod 'Firebase/Analytics'
 end
 
+target 'NotificationService' do
+  netmera_notification_service_pod
+end
+
+target 'NotificationContent' do
+  netmera_notification_content_pod
+end
+
 target 'NetmeraCarthage' do
   use_frameworks!
-  pod 'Netmera', :path => '../ineo/.'
+  netmera_pod
 end
 
 plugin 'cocoapods-keys', {
-  :project => 'Netmera',
+  :project => 'NetmeraSample',
   :target => 'iNeoX',
   :keys => [
     "NetmeraExampleAppAPIKey",
@@ -62,3 +44,11 @@ plugin 'cocoapods-keys', {
     "NetmeraIntegrationTestRestAPIKey",
   ]
 }
+
+#pre_install do |installer|
+#  installer.development_pod_targets.each do |target|
+#    target.specs.each do |spec|
+#      spec.attributes_hash.delete('public_header_files')
+#    end
+#  end
+#end

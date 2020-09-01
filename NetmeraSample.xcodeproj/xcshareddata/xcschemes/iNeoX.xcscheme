@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5F6DA5224FD2C9900F963BC"
-               BuildableName = "NetmeraCarthage.app"
-               BlueprintName = "NetmeraCarthage"
+               BlueprintIdentifier = "F5CCE6BA24FCE92E00BEECE0"
+               BuildableName = "iNeoX.app"
+               BlueprintName = "iNeoX"
                ReferencedContainer = "container:NetmeraSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5F6DA5224FD2C9900F963BC"
-            BuildableName = "NetmeraCarthage.app"
-            BlueprintName = "NetmeraCarthage"
+            BlueprintIdentifier = "F5CCE6BA24FCE92E00BEECE0"
+            BuildableName = "iNeoX.app"
+            BlueprintName = "iNeoX"
             ReferencedContainer = "container:NetmeraSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5F6DA5224FD2C9900F963BC"
-            BuildableName = "NetmeraCarthage.app"
-            BlueprintName = "NetmeraCarthage"
+            BlueprintIdentifier = "F5CCE6BA24FCE92E00BEECE0"
+            BuildableName = "iNeoX.app"
+            BlueprintName = "iNeoX"
             ReferencedContainer = "container:NetmeraSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
