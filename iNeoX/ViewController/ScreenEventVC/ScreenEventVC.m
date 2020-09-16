@@ -24,6 +24,9 @@
                                                                            action:@selector(submit)];
   self.cellIdentifier = TextFieldCellIdentifier;
   self.dataSource = @[@"ScreenId", @"PageId", @"ReferrerPageName", @"TimeInPage", @"ScreenId", @"Keywords"];
+    
+    NetmeraCartViewEvent *event = [NetmeraCartViewEvent event];
+    NSLog(event.dictionaryValue);
 }
 
 - (void)submit {

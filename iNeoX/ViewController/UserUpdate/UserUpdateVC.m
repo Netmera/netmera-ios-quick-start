@@ -32,6 +32,16 @@
   user.email = dict[@"Email"];
   user.MSISDN = dict[@"MSISDN"];
   [Netmera updateUser:user];
+    
+    [Netmera sendEvent:[NetmeraScreenViewEvent eventWithId:@"deneme" referrerPageId:@"pageId" referrerPageName:@"name" timeInPage:10.0 pageName:@""]];
+    
+    [Netmera sendEvent:[NetmeraScreenViewEvent eventWithId:@"deneme2" referrerPageId:@"pageId" referrerPageName:@"name" timeInPage:10.0 pageName:@""]];
+    [Netmera sendEvent:[NetmeraScreenViewEvent eventWithId:@"deneme3" referrerPageId:@"pageId" referrerPageName:@"name" timeInPage:10.0 pageName:@""]];
+    [Netmera sendEvent:[NetmeraScreenViewEvent eventWithId:@"deneme4" referrerPageId:@"pageId" referrerPageName:@"name" timeInPage:10.0 pageName:@""]];
+    [Netmera sendEvent:[NetmeraScreenViewEvent eventWithId:@"deneme5" referrerPageId:@"pageId" referrerPageName:@"name" timeInPage:10.0 pageName:@""]];
+
+
+
 }
 
 

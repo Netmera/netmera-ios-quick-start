@@ -58,7 +58,7 @@ platform :ios do
       export_options: {
       method: "enterprise",
       manifest: {
-        appURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/IneoNova/iNeo.ipa",
+        appURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/IneoNova/iNeoX.ipa",
         displayImageURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/icon180.png",
         fullSizeImageURL: "https://s3-eu-west-1.amazonaws.com/use-case/ElevateDemoApps/icon180.png",
         },
@@ -75,8 +75,7 @@ platform :ios do
   end
   
   lane :prepare_enterprise_credentials do
-  match(type: "enterprise")
-#    sync_code_signing(type: "enterprise", readonly: true)
+      match(git_url: "https://github.com/muhammedkilinc/netmera-certificates.git", type: "enterprise", app_identifier: ["com.inomera.iNeo", "com.inomera.iNeo.NotificationService", "com.inomera.iNeo.NotificationContent"], team_id: "95N24W2PH8")
   end
   
   lane :carthage_beta do
