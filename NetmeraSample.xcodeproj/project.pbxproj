@@ -18,6 +18,7 @@
 		F502E78F24FE3ADF00E8B21C /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F502E78E24FE3ADF00E8B21C /* NotificationViewController.m */; };
 		F502E79224FE3ADF00E8B21C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F502E79024FE3ADF00E8B21C /* MainInterface.storyboard */; };
 		F502E79624FE3ADF00E8B21C /* NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F502E78924FE3ADF00E8B21C /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5CC2A2825134C48004BA43B /* NotificationSliderPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F5CC2A2725134C48004BA43B /* NotificationSliderPayload.apns */; };
 		F5CCE6BF24FCE92E00BEECE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6BE24FCE92E00BEECE0 /* AppDelegate.m */; };
 		F5CCE6C224FCE92E00BEECE0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6C124FCE92E00BEECE0 /* SceneDelegate.m */; };
 		F5CCE6C824FCE92E00BEECE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CCE6C624FCE92E00BEECE0 /* Main.storyboard */; };
@@ -167,6 +168,7 @@
 		F502E79B24FE499C00E8B21C /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		F53419C52448521A0026A4DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		F53419C72448521A0026A4DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		F5CC2A2725134C48004BA43B /* NotificationSliderPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationSliderPayload.apns; sourceTree = "<group>"; };
 		F5CCE6BB24FCE92E00BEECE0 /* iNeoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNeoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CCE6BD24FCE92E00BEECE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5CCE6BE24FCE92E00BEECE0 /* AppDelegate.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; tabWidth = 2; };
@@ -310,6 +312,9 @@
 		F5CCE79F24FCEFDA00BEECE0 /* CRLCrashPrivInst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLCrashPrivInst.m; sourceTree = "<group>"; };
 		F5CCE7BB24FCF20A00BEECE0 /* iNeoX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iNeoX.entitlements; sourceTree = "<group>"; };
 		F5CCE7BC24FD0F4900BEECE0 /* container */ = {isa = PBXFileReference; lastKnownFileType = folder; path = container; sourceTree = "<group>"; };
+		F5D50C382512086B004C71C7 /* NotificationCarouselPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotificationCarouselPayload.apns; sourceTree = "<group>"; };
+		F5D50C3A25120887004C71C7 /* NotificationAlertPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotificationAlertPayload.apns; sourceTree = "<group>"; };
+		F5D50C3C25122609004C71C7 /* NotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayload.apns; sourceTree = "<group>"; };
 		F5F6DA5324FD2C9900F963BC /* NetmeraCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F6DA5524FD2C9900F963BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F6DA5724FD2C9900F963BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -414,6 +419,10 @@
 		F5CCE6BC24FCE92E00BEECE0 /* iNeoX */ = {
 			isa = PBXGroup;
 			children = (
+				F5D50C382512086B004C71C7 /* NotificationCarouselPayload.apns */,
+				F5D50C3A25120887004C71C7 /* NotificationAlertPayload.apns */,
+				F5D50C3C25122609004C71C7 /* NotificationPayload.apns */,
+				F5CC2A2725134C48004BA43B /* NotificationSliderPayload.apns */,
 				F5CCE7BC24FD0F4900BEECE0 /* container */,
 				F5CCE7BB24FCF20A00BEECE0 /* iNeoX.entitlements */,
 				F5CCE6BD24FCE92E00BEECE0 /* AppDelegate.h */,
@@ -872,6 +881,7 @@
 				F5CCE73524FCEDCE00BEECE0 /* InboxCategoryViewController.xib in Resources */,
 				F5CCE70E24FCEDAF00BEECE0 /* MapViewController.xib in Resources */,
 				F5CCE7BD24FD0F4900BEECE0 /* container in Resources */,
+				F5CC2A2825134C48004BA43B /* NotificationSliderPayload.apns in Resources */,
 				F5CCE73D24FCEDCE00BEECE0 /* InAppPurchase.storyboard in Resources */,
 				F5CCE71E24FCEDAF00BEECE0 /* ProductIds.plist in Resources */,
 			);

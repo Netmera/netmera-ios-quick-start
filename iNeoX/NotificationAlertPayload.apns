@@ -1,0 +1,11 @@
+{
+  "aps": {
+    "alert": {
+      "title": "iOS Push Title",
+      "body": "This is the netmera about push notification on simulators",
+      "sound": "default"
+    },
+    "badge": 4
+  },
+  "Simulator Target Bundle": "com.inomera.iNeo"
+}

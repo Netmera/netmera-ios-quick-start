@@ -1,0 +1,57 @@
+{
+  "aps" : {
+    "alert" : {
+      "title" : "asda",
+      "subtitle" : "asd234234",
+      "body" : "sasdasdasd [TEST]"
+    },
+    "category" : "NetmeraCarousel",
+    "content-available" : 1
+  },
+  "_nm" : {
+    "act" : {
+      "at" : 0
+    },
+    "stl": 2,
+    "crsl" : [
+      {
+        "id" : "0",
+        "ctitle" : "1",
+        "bpp" : "https:\/\/images.unsplash.com\/photo-1591760772207-2c70bcc8ea4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+        "act" : {
+          "at" : 0
+        },
+        "ctext" : "2"
+      },
+      {
+        "id" : "1",
+        "ctitle" : "3",
+        "bpp" : "https:\/\/images.unsplash.com\/photo-1593164842249-d74fc06dae05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80",
+        "act" : {
+          "at" : 1,
+          "uri" : "netmera:\/\/denemeDeeplink"
+        },
+        "ctext" : "4"
+      },
+      {
+        "id" : "2",
+        "ctitle" : "5",
+
+        "bpp" : "https:\/\/images.unsplash.com\/photo-1591760772207-2c70bcc8ea4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+        "act" : {
+          "at" : 2,
+          "url" : "htttp:\/\/netmera.com"
+        },
+        "ctext" : "6"
+      }
+    ],
+    "sts" : 1593600760060,
+    "pt" : 1,
+    "cat" : 0,
+    "prms" : {
+
+    },
+    "pid" : "79"
+  },
+  "Simulator Target Bundle": "com.inomera.iNeo"
+}

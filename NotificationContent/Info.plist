@@ -25,7 +25,10 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>UNNotificationExtensionCategory</key>
-			<string>NetmeraCarousel</string>
+			<array>
+				<string>General</string>
+				<string>NetmeraCarousel</string>
+			</array>
 			<key>UNNotificationExtensionInitialContentSizeRatio</key>
 			<real>0.5</real>
 			<key>UNNotificationExtensionUserInteractionEnabled</key>
@@ -41,5 +44,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>AppGroupName</key>
+	<string>group.com.netmera.ineo</string>
 </dict>
 </plist>

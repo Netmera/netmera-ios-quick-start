@@ -1,0 +1,28 @@
+
+{
+  "aps" : {
+    "alert" : {
+      "title" : "title",
+      "subtitle" : "subtitle",
+      "body" : "message [TEST]"
+    },
+    "mutable-content" : 1,
+    "content-available" : 1,
+    "category" : "General"
+  },
+  "_nm" : {
+    "stl": 1,
+    "act" : {
+      "at" : 0
+    },
+    "sts" : 1600258364107,
+    "mu" : "https:\/\/images.unsplash.com\/photo-1507646227500-4d389b0012be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+    "pt" : 1,
+    "cat" : 0,
+    "prms" : {
+
+    },
+    "pid" : "124"
+  },
+  "Simulator Target Bundle": "com.inomera.iNeo"
+}
