@@ -1,11 +1,11 @@
 PODS:
-  - AFNetworking/NSURLSession (4.0.1):
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
   - Firebase/Analytics (4.13.0):
     - Firebase/Core
   - Firebase/Core (4.13.0):
@@ -57,7 +57,7 @@ PODS:
     - Netmera/Core
   - Netmera/NotificationServiceExtension (3.8.4):
     - Netmera/Core
-  - UICKeyChainStore (2.2.0)
+  - UICKeyChainStore (2.2.1)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -91,7 +91,7 @@ EXTERNAL SOURCES:
     :path: "../ineo/."
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
@@ -106,8 +106,8 @@ SPEC CHECKSUMS:
   MMWormhole: 0cd3fd35a9118b2e2d762b499f54eeaace0be791
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Netmera: becc36a56fcee7c47900438177336d6654392e38
-  UICKeyChainStore: 6a218644594e12f855ec2a10f4fc576c1a69daee
+  UICKeyChainStore: ba3bff2c762b12db1e516f395c837dd25298b05e
 
-PODFILE CHECKSUM: 3cd69659027bc348466080479329601b22b9cd5e
+PODFILE CHECKSUM: 0d0ab25ef9ca182dc9ed2224142a276643cccf68
 
 COCOAPODS: 1.8.4

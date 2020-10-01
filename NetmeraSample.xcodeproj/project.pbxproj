@@ -18,6 +18,10 @@
 		F502E78F24FE3ADF00E8B21C /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F502E78E24FE3ADF00E8B21C /* NotificationViewController.m */; };
 		F502E79224FE3ADF00E8B21C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F502E79024FE3ADF00E8B21C /* MainInterface.storyboard */; };
 		F502E79624FE3ADF00E8B21C /* NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F502E78924FE3ADF00E8B21C /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F54A82C825149E2B004E0894 /* Icon-App2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54A82C625149E2A004E0894 /* Icon-App2@2x.png */; };
+		F54A82C925149E2B004E0894 /* Icon-App2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54A82C725149E2A004E0894 /* Icon-App2@3x.png */; };
+		F58AF8CF25149FCD00E9F648 /* Icon-App3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58AF8CD25149FCD00E9F648 /* Icon-App3@2x.png */; };
+		F58AF8D025149FCD00E9F648 /* Icon-App3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58AF8CE25149FCD00E9F648 /* Icon-App3@3x.png */; };
 		F5CC2A2825134C48004BA43B /* NotificationSliderPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F5CC2A2725134C48004BA43B /* NotificationSliderPayload.apns */; };
 		F5CCE6BF24FCE92E00BEECE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6BE24FCE92E00BEECE0 /* AppDelegate.m */; };
 		F5CCE6C224FCE92E00BEECE0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCE6C124FCE92E00BEECE0 /* SceneDelegate.m */; };
@@ -168,6 +172,11 @@
 		F502E79B24FE499C00E8B21C /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		F53419C52448521A0026A4DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		F53419C72448521A0026A4DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		F54A82C625149E2A004E0894 /* Icon-App2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App2@2x.png"; sourceTree = "<group>"; };
+		F54A82C725149E2A004E0894 /* Icon-App2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App2@3x.png"; sourceTree = "<group>"; };
+		F58AF8CD25149FCD00E9F648 /* Icon-App3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App3@2x.png"; sourceTree = "<group>"; };
+		F58AF8CE25149FCD00E9F648 /* Icon-App3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App3@3x.png"; sourceTree = "<group>"; };
+		F5BFE5842525F29A0029E7DD /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pluginfile; path = fastlane/Pluginfile; sourceTree = "<group>"; };
 		F5CC2A2725134C48004BA43B /* NotificationSliderPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationSliderPayload.apns; sourceTree = "<group>"; };
 		F5CCE6BB24FCE92E00BEECE0 /* iNeoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNeoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CCE6BD24FCE92E00BEECE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -247,7 +256,7 @@
 		F5CCE74324FCEDDC00BEECE0 /* EnvironmentUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentUtil.h; sourceTree = "<group>"; };
 		F5CCE74424FCEDDD00BEECE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5CCE74524FCEDDD00BEECE0 /* IAPTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPTableViewDataSource.h; sourceTree = "<group>"; };
-		F5CCE74A24FCEDE700BEECE0 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
+		F5CCE74A24FCEDE700BEECE0 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		F5CCE74B24FCEDE800BEECE0 /* DebugEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugEnvironment.m; sourceTree = "<group>"; };
 		F5CCE74C24FCEDE800BEECE0 /* DeeplinkRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeeplinkRouter.h; sourceTree = "<group>"; };
 		F5CCE74D24FCEDE800BEECE0 /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
@@ -419,6 +428,10 @@
 		F5CCE6BC24FCE92E00BEECE0 /* iNeoX */ = {
 			isa = PBXGroup;
 			children = (
+				F54A82C625149E2A004E0894 /* Icon-App2@2x.png */,
+				F54A82C725149E2A004E0894 /* Icon-App2@3x.png */,
+				F58AF8CD25149FCD00E9F648 /* Icon-App3@2x.png */,
+				F58AF8CE25149FCD00E9F648 /* Icon-App3@3x.png */,
 				F5D50C382512086B004C71C7 /* NotificationCarouselPayload.apns */,
 				F5D50C3A25120887004C71C7 /* NotificationAlertPayload.apns */,
 				F5D50C3C25122609004C71C7 /* NotificationPayload.apns */,
@@ -684,6 +697,7 @@
 		F5D786C72448411400739D6D = {
 			isa = PBXGroup;
 			children = (
+				F5BFE5842525F29A0029E7DD /* Pluginfile */,
 				F5F6DA6724FD2E6C00F963BC /* Fastfile */,
 				F502E79B24FE499C00E8B21C /* Gemfile */,
 				F5F6DA6824FD45F300F963BC /* Cartfile */,
@@ -791,7 +805,7 @@
 				F5F6DA4F24FD2C9900F963BC /* Sources */,
 				F5F6DA5024FD2C9900F963BC /* Frameworks */,
 				F5F6DA5124FD2C9900F963BC /* Resources */,
-				9B619D00B1D9C32EB6301DE1 /* [CP] Embed Pods Frameworks */,
+				80340D0086497C0815F179CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -873,9 +887,13 @@
 				F5CCE71F24FCEDAF00BEECE0 /* Netmera-Info.plist in Resources */,
 				F5CCE6CD24FCE93000BEECE0 /* LaunchScreen.storyboard in Resources */,
 				F5CCE6CA24FCE93000BEECE0 /* Assets.xcassets in Resources */,
+				F54A82C825149E2B004E0894 /* Icon-App2@2x.png in Resources */,
 				F5CCE73B24FCEDCE00BEECE0 /* InboxCategoryTableViewCell.xib in Resources */,
 				F5CCE73C24FCEDCE00BEECE0 /* InboxViewController.xib in Resources */,
+				F58AF8CF25149FCD00E9F648 /* Icon-App3@2x.png in Resources */,
 				F5CCE71D24FCEDAF00BEECE0 /* Settings.bundle in Resources */,
+				F54A82C925149E2B004E0894 /* Icon-App2@3x.png in Resources */,
+				F58AF8D025149FCD00E9F648 /* Icon-App3@3x.png in Resources */,
 				F5CCE75A24FCEDE800BEECE0 /* ControlsViewController.xib in Resources */,
 				F5CCE6C824FCE92E00BEECE0 /* Main.storyboard in Resources */,
 				F5CCE73524FCEDCE00BEECE0 /* InboxCategoryViewController.xib in Resources */,
@@ -961,7 +979,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B619D00B1D9C32EB6301DE1 /* [CP] Embed Pods Frameworks */ = {
+		80340D0086497C0815F179CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1288,7 +1306,7 @@
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iNeoX/iNeoX-Prefix.pch";
 				INFOPLIST_FILE = iNeoX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1315,7 +1333,7 @@
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iNeoX/iNeoX-Prefix.pch";
 				INFOPLIST_FILE = iNeoX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1379,7 +1397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1433,7 +1451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

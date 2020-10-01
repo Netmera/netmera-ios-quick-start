@@ -32,7 +32,7 @@ platform :ios do
   filter_pattern = '.*Pod/.*'
   spec_file = '../../ineo/Netmera.podspec'
 
-  FileUtils.rm_rf(artifacts_dir)
+#FileUtils.rm_rf(artifacts_dir)
   FileUtils.mkdir_p(beta_dir)
   FileUtils.mkdir_p(package_dir)
 
@@ -162,4 +162,76 @@ platform :ios do
     [Pathname.new("#{package_dir}#{spec.version}.zip"), Pathname.new(generated_spec_path)]
   end
   
+lane :upload_beta_amazon do
+
+aws_s3(
+# All of these are used to make Shenzhen's `ipa distribute:s3` command
+access_key: ENV['S3_ACCESS_KEY'],               # Required from user (unless using aws_profile).
+secret_access_key: ENV['S3_SECRET_ACCESS_KEY'], # Required from user (unless using aws_profile).
+# aws_profile: ENV['AWS_PROFILE'],                 # Required from user (unless using access_key and secret_access_key)
+bucket: ENV['S3_BUCKET'],                       # Required from user.
+region: ENV['S3_REGION'],                       # Required from user.
+# acl: ENV['S3_ACL'],                             # Optional - defaults to 'public-read'
+# server_side_encryption: ENV['S3_SERVER_SIDE_ENCRYPTION'] # Optional
+
+# endpoint: 'https://s3-eu-west-1.amazonaws.com', # Optional, for buckets that require a specific endpoint
+ipa: 'fastlane/artifacts/beta/iNeoX.ipa',                             # Required (if not uploading an APK).
+dsym: 'fastlane/artifacts/beta/iNeoX.app.dSYM.zip',                   # Optional if you use `ipa` to build.
+# app_directory: 'ios',                # Optional but nice if you want to put multiple apps in same bucket
+path: 'v{CFBundleShortVersionString}_b{CFBundleVersion}/', # This is actually the default.
+upload_metadata: true,                          # Upload version.json, plist and HTML. Set to false to skip uploading of these files.
+version_file_name: 'app_version.json',          # Name of the file to upload to S3. Defaults to 'version.json'
+version_template_path: 'path/to/erb'            # Path to an ERB to configure the structure of the version JSON file
+)
+end
+
+desc 'Release new pod version'
+lane :release_pod do |options|
+  target_repo    = options[:repo]
+  target_project = options[:project]
+  target_version = options[:version]
+  target_desc    = options[:desc]
+  spec_path      = "#{target_project}.podspec"
+
+  if target_project.nil? || target_project.empty? || target_version.nil? || target_version.empty?
+    UI.message("❌ Project name and version number are required parameters")
+    exit
+  end
+
+  UI.message("👉 Start release lib #{target_project} new version #{target_version}")
+
+  git_pull
+  ensure_git_branch
+  version_bump_podspec(path: spec_path, version_number: target_version)
+  git_add(path: '.')
+  begin
+    if target_desc.nil? || target_desc.empty?
+      git_commit(path: '.', message: "release #{target_version}")
+    else
+      git_commit(path: '.', message: target_desc)
+    end
+  rescue
+    error_message = "#{$!}"
+    UI.message("⚠️ commit error:#{error_message}")
+    unless error_message.include?("nothing to commit, working directory clean")
+      exit
+    end
+    UI.message("The local code has committed, skip the commit step!")
+  end
+  push_to_git_remote
+  if git_tag_exists(tag: target_version)
+      UI.message("Tag #{target_version} already exists, then, delete it! 💥")
+      remove_git_tag(tag: target_version)
+  end
+  add_git_tag(tag: target_version)
+  push_git_tags
+  pod_lib_lint(allow_warnings: true)
+  if target_repo
+    pod_push(path: spec_path, repo: target_repo, allow_warnings: true)
+    UI.message("Release lib #{target_project} new version #{target_version} to repo #{target_repo} Successfully! 🎉 ")
+  else
+    pod_push(path: spec_path, allow_warnings: true)
+    UI.message("Release lib #{target_project} new version #{target_version} to CocoaPods/Specs Successfully! 🎉 ")
+  end
+end
 end

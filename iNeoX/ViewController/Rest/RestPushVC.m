@@ -104,18 +104,18 @@ extern NSString *const NetmeraAPIKeyHTTPHeaderKey;
   [self.requestManager.requestSerializer setValue:[self environment].restAPIKey
                                forHTTPHeaderField:NetmeraAPIKeyHTTPHeaderKey];
 
-  [self.requestManager POST:
-   [NSString stringWithFormat:@"%@/rest/3.0/sendNotification", [self environment].baseURL]
-                 parameters:params
-                    headers:nil
-                   progress:nil
-                    success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-    NSLog(@"responseObject: %@", responseObject);
-  }
-                    failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    NSLog(@"error: %@", error);
-    
-  }];
+//  [self.requestManager POST:
+//   [NSString stringWithFormat:@"%@/rest/3.0/sendNotification", [self environment].baseURL]
+//                 parameters:params
+//                    headers:nil
+//                   progress:nil
+//                    success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//    NSLog(@"responseObject: %@", responseObject);
+//  }
+//                    failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//    NSLog(@"error: %@", error);
+//    
+//  }];
 }
 
 #pragma mark - Accessors

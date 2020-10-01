@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '8.0'
 #use_frameworks!
 
 
@@ -44,7 +44,7 @@ plugin 'cocoapods-keys', {
     "NetmeraIntegrationTestRestAPIKey",
   ]
 }
-
+#
 #pre_install do |installer|
 #  installer.development_pod_targets.each do |target|
 #    target.specs.each do |spec|

@@ -89,6 +89,11 @@
   return [self.deeplinkRouter handleURL:url];
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+  
+  return true;
+}
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
   NSLog(@"didReceiveRemoteNotification: %@", userInfo);

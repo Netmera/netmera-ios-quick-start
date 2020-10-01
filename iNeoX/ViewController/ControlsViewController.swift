@@ -50,6 +50,54 @@ class ControlsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     tapView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(touchedView(_:))))
     tapView.isUserInteractionEnabled = true
+    
+    let path: String? = Bundle.main.path(forResource: "Icon-App2@2x", ofType: "png")
+    print(path ?? "")
+    
+    var filePath = Bundle.main.url(forResource: "Icon-App2@2x", withExtension: "png")
+
+    if let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last {
+      let fileURL = documentsDirectory.appendingPathComponent("Icon-App2@2x.png")
+      do {
+        if try fileURL.checkResourceIsReachable() {
+          print("file exist")
+        } else {
+          print("file doesnt exist")
+          do {
+            try Data().write(to: fileURL)
+          } catch {
+            print("an error happened while creating the file")
+          }
+        }
+      } catch {
+        print("an error happened while checking for the file")
+      }
+    }
+    
+  }
+  
+  func saveIcon() {
+
+  }
+  
+  func load(url: URL) {
+    DispatchQueue.global().async { [weak self] in
+      if let data = try? Data(contentsOf: url) {
+        if let image = UIImage(data: data) {
+          DispatchQueue.main.async {
+            if let data = image.pngData() {
+              let filename = self!.getDocumentsDirectory().appendingPathComponent("copy.png")
+              try? data.write(to: filename)
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  func getDocumentsDirectory() -> URL {
+      let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+      return paths[0]
   }
   
   @objc func touchedView(_ sender: Any) {
@@ -58,10 +106,36 @@ class ControlsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
   
   @IBAction func touchedButton(_ sender: Any) {
     self.view.endEditing(true)
+    self.changeIcon(to: "Icon-App2")
   }
   
+  func changeIcon(to iconName: String?) {
+    // 1
+    if #available(iOS 10.3, *) {
+      print(UIApplication.shared.alternateIconName ?? "Primary")
+
+      guard UIApplication.shared.supportsAlternateIcons else {
+        return
+      }
+      // 2
+      UIApplication.shared.setAlternateIconName(iconName, completionHandler: { (error) in
+        // 3
+        if let error = error {
+          print("App icon failed to change due to \(error.localizedDescription)")
+        } else {
+          print("App icon changed successfully")
+        }
+      })
+    } else {
+      // Fallback on earlier versions
+    }
+    
+   
+  }
+    
   @IBAction func touchedSecondButton(_ sender: Any) {
     self.view.endEditing(true)
+    self.changeIcon(to: "Icon-App3")
   }
   
   @IBAction func valueChangedSwitched(_ sender: Any) {
@@ -69,8 +143,9 @@ class ControlsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
   }
   
   @IBAction func valueChangedSegment(_ sender: Any) {
-    
+    self.changeIcon(to: nil)
   }
+  
   @IBAction func valueChangedSlider() {
     
   }

@@ -12,7 +12,7 @@ Install _fastlane_ using
 ```
 [sudo] gem install fastlane -NV
 ```
-or alternatively using `brew cask install fastlane`
+or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
@@ -66,6 +66,16 @@ fastlane ios generate_internal_framework
 fastlane ios generate_framework
 ```
 
+### ios upload_beta_amazon
+```
+fastlane ios upload_beta_amazon
+```
+
+### ios release_pod
+```
+fastlane ios release_pod
+```
+Release new pod version
 
 ----
 
