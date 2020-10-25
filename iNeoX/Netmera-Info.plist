@@ -41,9 +41,7 @@
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>flo</string>
-		<string>posta</string>
-		<string>morhipo</string>
+		<string>netmera</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

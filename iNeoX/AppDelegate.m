@@ -40,15 +40,16 @@
   [AlertPresenter setupDefaultPresenterWithApplication:application];
   [FIRApp configure];
   
-  UNUserNotificationCenter.currentNotificationCenter.delegate = self;
-  
+  if (@available(iOS 10.0, *)) {
+    UNUserNotificationCenter.currentNotificationCenter.delegate = self;
+  }
   if (self.environment.APIKey) {
     [Netmera start];
     [Netmera setAPIKey:self.environment.APIKey];
     if (self.environment.baseURL) {
       [Netmera setBaseURL:self.environment.baseURL];
     }
-    
+
     [Netmera setAppGroupName:@"group.com.netmera.ineo"];
     [Netmera setPushDelegate:self];
     [Netmera setLogLevel:NetmeraLogLevelDebug];
@@ -169,14 +170,14 @@
   
 }
 
-- (BOOL)shouldHandleOpenURL:(NSURL *)url forPushObject:(NetmeraPushObject *)object {
-    return [NSUserDefaults.standardUserDefaults boolForKey:@"handleDeeplink"];
-}
-
-- (void)handleOpenURL:(NSURL *)url forPushObject:(NetmeraPushObject *)object {
-    NSLog(@"handleDeeplinkForURL: %@ PushObject %@", url, object);
-  // TODO: Resolve url components
-  [self.deeplinkRouter handleURL:url];
-}
+//- (BOOL)shouldHandleOpenURL:(NSURL *)url forPushObject:(NetmeraPushObject *)object {
+//    return [NSUserDefaults.standardUserDefaults boolForKey:@"handleDeeplink"];
+//}
+//
+//- (void)handleOpenURL:(NSURL *)url forPushObject:(NetmeraPushObject *)object {
+//    NSLog(@"handleDeeplinkForURL: %@ PushObject %@", url, object);
+//  // TODO: Resolve url components
+//  [self.deeplinkRouter handleURL:url];
+//}
 
 @end

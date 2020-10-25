@@ -47,7 +47,7 @@ static NSString *const LogEventClassName = @"class_name";
   if (className && NSClassFromString(className)) {
     [parameters removeObjectForKey:LogEventClassName];
     [parameters removeObjectForKey:ActionTypeKey];
-
+      
     __block  Class klass = NSClassFromString(className);
     NetmeraEvent *event = [klass alloc];
     
@@ -57,7 +57,9 @@ static NSString *const LogEventClassName = @"class_name";
     
     event = eventForClassFromDict([event class]);
     if (event) {
-      [Netmera sendEvent:event];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [Netmera sendEvent:event];
+        });
     }
   }
 }

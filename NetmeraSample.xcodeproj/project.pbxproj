@@ -20,6 +20,8 @@
 		F502E79624FE3ADF00E8B21C /* NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F502E78924FE3ADF00E8B21C /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F54A82C825149E2B004E0894 /* Icon-App2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54A82C625149E2A004E0894 /* Icon-App2@2x.png */; };
 		F54A82C925149E2B004E0894 /* Icon-App2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54A82C725149E2A004E0894 /* Icon-App2@3x.png */; };
+		F54FA1DB252C5F3B0000A1DA /* FirebaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54FA1DA252C5F3B0000A1DA /* FirebaseViewController.m */; };
+		F56D7E4525406FB9004E2D50 /* MyCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D7E4425406FB9004E2D50 /* MyCustomEvent.swift */; };
 		F58AF8CF25149FCD00E9F648 /* Icon-App3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58AF8CD25149FCD00E9F648 /* Icon-App3@2x.png */; };
 		F58AF8D025149FCD00E9F648 /* Icon-App3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58AF8CE25149FCD00E9F648 /* Icon-App3@3x.png */; };
 		F5CC2A2825134C48004BA43B /* NotificationSliderPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F5CC2A2725134C48004BA43B /* NotificationSliderPayload.apns */; };
@@ -174,6 +176,9 @@
 		F53419C72448521A0026A4DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		F54A82C625149E2A004E0894 /* Icon-App2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App2@2x.png"; sourceTree = "<group>"; };
 		F54A82C725149E2A004E0894 /* Icon-App2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App2@3x.png"; sourceTree = "<group>"; };
+		F54FA1D9252C5F3B0000A1DA /* FirebaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseViewController.h; sourceTree = "<group>"; };
+		F54FA1DA252C5F3B0000A1DA /* FirebaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseViewController.m; sourceTree = "<group>"; };
+		F56D7E4425406FB9004E2D50 /* MyCustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomEvent.swift; sourceTree = "<group>"; };
 		F58AF8CD25149FCD00E9F648 /* Icon-App3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App3@2x.png"; sourceTree = "<group>"; };
 		F58AF8CE25149FCD00E9F648 /* Icon-App3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App3@3x.png"; sourceTree = "<group>"; };
 		F5BFE5842525F29A0029E7DD /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Pluginfile; path = fastlane/Pluginfile; sourceTree = "<group>"; };
@@ -449,6 +454,7 @@
 				F5CCE6D824FCEDAB00BEECE0 /* NetmeraGTMTagManager.h */,
 				F5CCE6ED24FCEDAC00BEECE0 /* NetmeraGTMTagManager.m */,
 				F5CCE75F24FCEDF800BEECE0 /* AppInfo.swift */,
+				F56D7E4425406FB9004E2D50 /* MyCustomEvent.swift */,
 				F5CCE76924FCEEE400BEECE0 /* Helper */,
 				F5CCE72424FCEDC200BEECE0 /* IneoEncryptor.h */,
 				F5CCE72624FCEDC300BEECE0 /* IneoEncryptor.m */,
@@ -561,6 +567,8 @@
 				F5CCE6E724FCEDAC00BEECE0 /* MapViewController.xib */,
 				F5CCE74A24FCEDE700BEECE0 /* ControlsViewController.swift */,
 				F5CCE75224FCEDE800BEECE0 /* ControlsViewController.xib */,
+				F54FA1D9252C5F3B0000A1DA /* FirebaseViewController.h */,
+				F54FA1DA252C5F3B0000A1DA /* FirebaseViewController.m */,
 				F5CCE76324FCEE3A00BEECE0 /* CrashVC */,
 				F5CCE76B24FCEF7300BEECE0 /* Push */,
 				F5CCE76C24FCEF7C00BEECE0 /* Rest */,
@@ -823,7 +831,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Netmera;
 				TargetAttributes = {
 					F502E77724FE39BC00E8B21C = {
@@ -1074,6 +1082,7 @@
 				F5CCE71B24FCEDAF00BEECE0 /* StoreObserver.m in Sources */,
 				F5CCE7A424FCEFDA00BEECE0 /* CRLCrashNULL.m in Sources */,
 				F5CCE72724FCEDC300BEECE0 /* JSONHelper.m in Sources */,
+				F54FA1DB252C5F3B0000A1DA /* FirebaseViewController.m in Sources */,
 				F5CCE71524FCEDAF00BEECE0 /* ProductsListViewController.m in Sources */,
 				F5CCE71624FCEDAF00BEECE0 /* PushVC.m in Sources */,
 				F5CCE7A324FCEFDA00BEECE0 /* CRLCrashSwift.swift in Sources */,
@@ -1126,6 +1135,7 @@
 				F5CCE6C224FCE92E00BEECE0 /* SceneDelegate.m in Sources */,
 				F5CCE7A724FCEFDA00BEECE0 /* CRLCrashCorruptObjC.m in Sources */,
 				F5CCE7A024FCEFDA00BEECE0 /* CRLCrashStackGuard.m in Sources */,
+				F56D7E4525406FB9004E2D50 /* MyCustomEvent.swift in Sources */,
 				F5CCE76024FCEDF800BEECE0 /* AppInfo.swift in Sources */,
 				F5CCE75B24FCEDE900BEECE0 /* CrashesObjViewController.m in Sources */,
 				F5CCE70D24FCEDAF00BEECE0 /* ScreenEventVC.m in Sources */,
@@ -1306,7 +1316,7 @@
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iNeoX/iNeoX-Prefix.pch";
 				INFOPLIST_FILE = iNeoX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1333,7 +1343,7 @@
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iNeoX/iNeoX-Prefix.pch";
 				INFOPLIST_FILE = iNeoX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1373,6 +1383,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1433,6 +1444,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

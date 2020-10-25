@@ -16,6 +16,7 @@
 #import "iNeoX-Swift.h"
 #import "InAppPurchaseViewController.h"
 #import "CrashesObjViewController.h"
+#import "FirebaseViewController.h"
 
 @interface Netmera ()
 
@@ -46,6 +47,7 @@
                       [MapViewController class],
                       [CrashesObjViewController class],
                       [CrashesSwiftViewController class],
+                      [FirebaseViewController class],
                       NSStringFromSelector(@selector(addToTestDevices)),
                       ];
   [self configureFooterView];

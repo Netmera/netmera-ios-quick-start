@@ -30,7 +30,7 @@
 				<string>NetmeraCarousel</string>
 			</array>
 			<key>UNNotificationExtensionInitialContentSizeRatio</key>
-			<real>0.5</real>
+			<integer>0</integer>
 			<key>UNNotificationExtensionUserInteractionEnabled</key>
 			<true/>
 		</dict>

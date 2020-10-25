@@ -43,19 +43,19 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - Netmera (3.8.4):
-    - Netmera/Application (= 3.8.4)
-  - Netmera/Application (3.8.4):
+  - Netmera (3.9.0):
+    - Netmera/Application (= 3.9.0)
+  - Netmera/Application (3.9.0):
     - FMDB
     - MMWormhole (~> 2.0.0)
     - Netmera/Core
     - UICKeyChainStore (~> 2.0)
-  - Netmera/Core (3.8.4):
+  - Netmera/Core (3.9.0):
     - AFNetworking/NSURLSession
-  - Netmera/NotificationContentExtension (3.8.4):
+  - Netmera/NotificationContentExtension (3.9.0):
     - MMWormhole (~> 2.0.0)
     - Netmera/Core
-  - Netmera/NotificationServiceExtension (3.8.4):
+  - Netmera/NotificationServiceExtension (3.9.0):
     - Netmera/Core
   - UICKeyChainStore (2.2.1)
 
@@ -105,9 +105,9 @@ SPEC CHECKSUMS:
   Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   MMWormhole: 0cd3fd35a9118b2e2d762b499f54eeaace0be791
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  Netmera: becc36a56fcee7c47900438177336d6654392e38
+  Netmera: 9552affe81971235ee135d3420bb0ccfb77a1df0
   UICKeyChainStore: ba3bff2c762b12db1e516f395c837dd25298b05e
 
-PODFILE CHECKSUM: 0d0ab25ef9ca182dc9ed2224142a276643cccf68
+PODFILE CHECKSUM: 38a3544529ee6e2e54cf9708b5af8659502a8217
 
 COCOAPODS: 1.8.4

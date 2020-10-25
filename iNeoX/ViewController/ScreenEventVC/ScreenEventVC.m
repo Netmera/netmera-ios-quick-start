@@ -25,6 +25,8 @@
   self.cellIdentifier = TextFieldCellIdentifier;
   self.dataSource = @[@"ScreenId", @"PageId", @"ReferrerPageName", @"TimeInPage", @"ScreenId", @"Keywords"];
     
+    BOOL success = [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"netmera://test"]];
+    NSLog(@"%d", (int)success);
 //    NetmeraCartViewEvent *event = [NetmeraCartViewEvent event];
 //    NSLog(event.dictionaryValue);
 }

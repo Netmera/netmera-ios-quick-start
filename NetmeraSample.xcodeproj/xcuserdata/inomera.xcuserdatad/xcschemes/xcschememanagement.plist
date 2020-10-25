@@ -12,12 +12,12 @@
 		<key>NotificationContent.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>31</integer>
+			<integer>30</integer>
 		</dict>
 		<key>NotificationService.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>31</integer>
 		</dict>
 		<key>iNeoX.xcscheme_^#shared#^_</key>
 		<dict>

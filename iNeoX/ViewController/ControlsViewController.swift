@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SafariServices
+import os.log
 
 class ControlsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UITextViewDelegate {
 
@@ -102,6 +104,10 @@ class ControlsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
   
   @objc func touchedView(_ sender: Any) {
     print("touchedView")
+    
+    let event = MyCustomEvent()
+    event.testNumber = NSNumber(value: 10)
+    Netmera.send(event)
   }
   
   @IBAction func touchedButton(_ sender: Any) {
@@ -139,7 +145,15 @@ class ControlsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
   }
   
   @IBAction func valueChangedSwitched(_ sender: Any) {
-    
+    let redirectUrl = URL(string: "http://track.sdpaas.com/adjust/")!
+    let safariViewController = SFSafariViewController(url: redirectUrl)
+    safariViewController.delegate = self
+//        safariViewController.modalPresentationStyle = .overCurrentContext
+    safariViewController.view.alpha = 1.05
+     
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        self.present(UINavigationController(rootViewController: safariViewController), animated: false, completion: nil)
+    }
   }
   
   @IBAction func valueChangedSegment(_ sender: Any) {
@@ -227,3 +241,14 @@ class ControlsDelegateNoSelector: NSObject, UITextFieldDelegate  {
   }
 }
 
+extension ControlsViewController: SFSafariViewControllerDelegate {
+    func safariViewController(_ controller: SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Bool) {
+        let storage = HTTPCookieStorage.shared
+        print(storage.cookies)
+//     controller.dismiss(animated: false, completion: nil)
+    }
+   
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+//     controller.dismiss(animated: false, completion: nil)
+    }
+}
