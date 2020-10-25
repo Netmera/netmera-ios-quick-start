@@ -95,7 +95,6 @@
 		E5891E4976DC9CB4D71EF8C9 /* Pods_NetmeraSampleNotificationContentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleNotificationContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97244AD1DFA39BBF0DA72B3 /* Pods-NetmeraSampleNotificationContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetmeraSampleNotificationContentExtension.release.xcconfig"; path = "Target Support Files/Pods-NetmeraSampleNotificationContentExtension/Pods-NetmeraSampleNotificationContentExtension.release.xcconfig"; sourceTree = "<group>"; };
 		EA986CE992CF50034E6B1204 /* Pods_NetmeraSampleNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetmeraSampleNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F53419BF2448502F0026A4DA /* NetmeraSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraSample.entitlements; sourceTree = "<group>"; };
 		F53419C42448521A0026A4DA /* NetmeraSampleNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NetmeraSampleNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53419C52448521A0026A4DA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		F53419C72448521A0026A4DA /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -112,6 +111,7 @@
 		F53419EE24487E4D0026A4DA /* InboxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
 		F53419F124487EE80026A4DA /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
 		F53419F224487EE80026A4DA /* InboxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxTableViewCell.xib; sourceTree = "<group>"; };
+		F58E238825460CD300F652EB /* NetmeraSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraSample.entitlements; sourceTree = "<group>"; };
 		F5D786D02448411400739D6D /* NetmeraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D786D32448411400739D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D786D52448411500739D6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 		F5D786D22448411400739D6D /* NetmeraSample */ = {
 			isa = PBXGroup;
 			children = (
-				F53419BF2448502F0026A4DA /* NetmeraSample.entitlements */,
+				F58E238825460CD300F652EB /* NetmeraSample.entitlements */,
 				F5D786D32448411400739D6D /* AppDelegate.swift */,
 				F5D786D52448411500739D6D /* SceneDelegate.swift */,
 				F5D786D72448411500739D6D /* ViewController.swift */,
@@ -692,7 +692,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo.NotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationContentExtension/NetmeraSampleNotificationContentExtension-Bridging-Header.h";
@@ -714,7 +714,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo.NotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationContentExtension/NetmeraSampleNotificationContentExtension-Bridging-Header.h";
@@ -727,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C21C170DA418D21CEFFD03A /* Pods-NetmeraSampleNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				INFOPLIST_FILE = NetmeraSampleNotificationServiceExtension/Info.plist;
@@ -735,8 +736,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationServiceExtension/NetmeraSampleNotificationServiceExtension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -748,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32B74BF37AB7512BFB089ECC /* Pods-NetmeraSampleNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				INFOPLIST_FILE = NetmeraSampleNotificationServiceExtension/Info.plist;
@@ -756,8 +759,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample.NetmeraSampleNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NetmeraSampleNotificationServiceExtension/NetmeraSampleNotificationServiceExtension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -886,6 +890,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NetmeraSample/NetmeraSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				INFOPLIST_FILE = NetmeraSample/Info.plist;
@@ -893,8 +898,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -907,6 +913,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NetmeraSample/NetmeraSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				INFOPLIST_FILE = NetmeraSample/Info.plist;
@@ -914,8 +921,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netmera.NetmeraSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inomera.iNeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -25,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startNetmera() {
         Netmera.start()
-//        Netmera.setBaseURL("YOUR_BASE_URL")
-        Netmera.setAPIKey("SET_YOUR_API_KEY")
-        Netmera.setAppGroupName("group.com.netmera.NetmeraSample")
+        Netmera.setBaseURL("http://nova.sdpaas.com")
+        Netmera.setAPIKey("7rfv-f7UhnlnaTtfmPmRZPLRWppSoqtZix5M7yTFWDgCruNEnfHLBA")
+//        Netmera.setAppGroupName("group.com.netmera.NetmeraSample")
         Netmera.setLogLevel(NetmeraLogLevel.debug)
 //        Netmera.setPushDelegate(self)
 //        Netmera.setEnabledPopupPresentation(true)
