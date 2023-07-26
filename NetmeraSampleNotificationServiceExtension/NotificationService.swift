@@ -7,6 +7,7 @@
 //
 
 import UserNotifications
+import NetmeraNotificationServiceExtension
 
 class NotificationService:  NetmeraNotificationServiceExtension {
 
